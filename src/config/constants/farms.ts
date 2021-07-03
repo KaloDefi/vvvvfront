@@ -108,7 +108,7 @@ const farms: FarmConfig[] = [
     lpAddresses: {
       97: '',
       56: '0x2354ef4df11afacb85a5c7f98b624072eccddbb1',
-    }
+    },
     token: tokens.usdc,
     quoteToken: tokens.busd,
   },
