@@ -12,7 +12,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.pancakeswap.finance/#/swap',
+        href: 'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x3594a1674250bcc658aa18babf028c894e463b25',
       },
       {
         label: 'Liquidity',
@@ -20,11 +20,11 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Buy ViXA',
-        href: 'https://exchange.pancakeswap.finance/#/swap',
+        href: 'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x3594a1674250bcc658aa18babf028c894e463b25',
       },
       {
         label: 'Add ViXA-BNB LP',
-        href: 'https://exchange.pancakeswap.finance/#/pool',
+        href: 'https://exchange.pancakeswap.finance/#/add/BNB/0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
       },
     ],
   },
@@ -50,23 +50,19 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Pancakeswap',
-        href: 'https://pancakeswap.info/token/0x3594a1674250bcc658aa18babf028c894e463b25',
+        href: 'https://pancakeswap.info/token/0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
       },
       {
         label: 'Bogged',
-        href: 'https://charts.bogged.finance/?token=0x3594a1674250bcC658AA18BAbF028C894e463B25',
+        href: 'https://charts.bogged.finance/?token=0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
       },
       {
         label: 'Poocoin',
-        href: 'https://poocoin.app/tokens/0x3594a1674250bcc658aa18babf028c894e463b25',
-      },
-      {
-        label: 'Dex.guru',
-        href: 'https://dex.guru/token/0x3594a1674250bcc658aa18babf028c894e463b25-bsc',
+        href: 'https://poocoin.app/tokens/0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
       },
       {
         label: 'BSCScan',
-        href: 'https://bscscan.com/token/0x3594a1674250bcc658aa18babf028c894e463b25',
+        href: 'https://bscscan.com/token/0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
       },
       
     ],
@@ -85,9 +81,9 @@ const config: MenuEntry[] = [
   },
  
   {
-    label: 'Bridge',
+    label: 'Polygon (Soon)',
     icon: 'BridgeIcon',
-    href: 'https://www.binance.org/en/bridge',
+    href: '#',
   },
 
  
@@ -95,13 +91,10 @@ const config: MenuEntry[] = [
     label: 'More',
     icon: 'MoreIcon',
     items: [
-      {
-        label: 'Telegram Group',
-        href: 'https://t.me/PuSwapGroup',
-      },
+      
       {
         label: 'Telegram ANN',
-        href: 'https://t.me/ViXAFinance',
+        href: 'https://t.me/ViXAFinance,
       },
       {
         label: 'Docs',
