@@ -46,6 +46,22 @@ const CakeStats = () => {
           <Text fontSize="14px">{t('New PUSX/block')}</Text>
           <CardValue fontSize="14px" decimals={0} value={pusxPerBlock} />
         </Row>
+        <Row>
+          <Text fontSize="14px">{t('New PUSX/block')}</Text>
+          <CardValue fontSize="14px" decimals={0} value={pusxPerBlock} />
+        </Row>
+        <Row>
+          <Text fontSize="14px">{t('New PUSX/block')}</Text>
+          <CardValue fontSize="14px" decimals={0} value={pusxPerBlock} />
+        </Row>
+        <Row>
+          <Text fontSize="14px">{t('New PUSX/block')}</Text>
+          <CardValue fontSize="14px" decimals={0} value={pusxPerBlock} />
+        </Row>
+        <Row>
+          <Text fontSize="14px">{t('New PUSX/block')}</Text>
+          <CardValue fontSize="14px" decimals={0} value={pusxPerBlock} />
+        </Row>
        
       </CardBody>
     </StyledCakeStats>
