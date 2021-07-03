@@ -6,11 +6,11 @@ const tokens = {
   vixa: {
     symbol: 'VIXA',
     address: {
-      56: '0x3594a1674250bcC658AA18BAbF028C894e463B25',
+      56: '0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
       97: '',
     },
     decimals: 18,
-    projectLink: 'https://puswap.com',
+    projectLink: 'https://vixa.finance',
   },
   btcb: {
     symbol: 'BTCB',
