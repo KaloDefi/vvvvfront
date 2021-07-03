@@ -8,6 +8,8 @@ import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
 import { useTranslation } from 'contexts/Localization'
 import { getCakeAddress } from 'utils/addressHelpers'
 import CardValue from './CardValue'
+import { usePriceCakeBusd } from 'state/hooks'
+
 
 const StyledCakeStats = styled(Card)`
   margin-left: auto;
@@ -21,7 +23,7 @@ const Row = styled.div`
   justify-content: space-between;
   margin-bottom: 8px;
 `
-
+const cakePriceBusd = usePriceCakeBusd()
 const CakeStats = () => {
   const { t } = useTranslation()
   const totalSupply = useTotalSupply()
@@ -32,18 +34,22 @@ const CakeStats = () => {
     <StyledCakeStats>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {t('PUSX Stats')}
+          {t('ViXA Details')}
         </Heading>
         <Row>
-          <Text fontSize="14px">{t('Total PUSX Supply')}</Text>
+           <Text fontSize="18px">{t('ViXA Price')}</Text>
+          <CardValue fontSize="18px" decimals={0} value={cakePriceBusd} />
+        </Row>
+        <Row>
+          <Text fontSize="14px">{t('Total ViXA Supply')}</Text>
           {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} />}
         </Row>
         <Row>
-          <Text fontSize="14px">{t('Total PUSX Burned')}</Text>
+          <Text fontSize="14px">{t('Total ViXA Burned')}</Text>
           <CardValue fontSize="14px" decimals={0} value={burnedBalance} />
         </Row>
         <Row>
-          <Text fontSize="14px">{t('New PUSX/block')}</Text>
+          <Text fontSize="14px">{t('New ViXA/block')}</Text>
           <CardValue fontSize="14px" decimals={0} value={pusxPerBlock} />
         </Row>
         <Row>
