@@ -56,8 +56,8 @@ const CakeStats = () => {
           <CardValue fontSize="14px" decimals={0} value={0} />
         </Row>
         <Row>
-          <Text fontSize="14px">{t('Yield Farms Start Block# ')}</Text>
-          <Text fontSize="14px">{t('08 July 2021')}</Text>
+          <Text fontSize="14px">{t('Yield Farms Start Block#8945555  ')}</Text>
+          <Text fontSize="14px">{t('Jul 07 2021 - 10:00 AM UTC')}</Text>
         </Row>
         <Row>
           <Text fontSize="14px">{t('Token Contract')}</Text>
