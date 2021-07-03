@@ -95,8 +95,8 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
 
   const [showExpandableSection, setShowExpandableSection] = useState(false)
 
-  // We assume the token name is coin pair + lp e.g. PUSX-BNB LP, LINK-BNB LP,
-  // NAR-PUSX LP. The images should be cake-bnb.svg, link-bnb.svg, nar-cake.svg
+  // We assume the token name is coin pair + lp e.g. VIXA-BNB LP, LINK-BNB LP,
+  // NAR-VIXA LP. The images should be cake-bnb.svg, link-bnb.svg, nar-cake.svg
   const farmImage = farm.lpSymbol.split(' ')[0].toLocaleLowerCase()
 
   const totalValueFormatted = farm.liquidity
@@ -104,7 +104,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
     : '-'
 
   const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('PANCAKE', '')
-  const earnLabel = farm.dual ? farm.dual.earnLabel : 'PUSX'
+  const earnLabel = farm.dual ? farm.dual.earnLabel : 'VIXA'
 
   const farmAPR = farm.apr && farm.apr.toLocaleString('en-US', { maximumFractionDigits: 2 })
   const depositFee = farm.depositFeeBP || 0
@@ -118,7 +118,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
 
   return (
     <FCard>
-      {farm.token.symbol === 'PUSX' && <StyledCardAccent />}
+      {farm.token.symbol === 'VIXA' && <StyledCardAccent />}
       <CardHeading
         lpLabel={lpLabel}
         multiplier={farm.multiplier}
@@ -162,7 +162,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
       <ExpandingWrapper expanded={showExpandableSection}>
         <DetailsSection
           removed={removed}
-          bscScanAddress={`https://bscscan.com/address/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`}
+          bscScanAddress={`https://bscscan.com/token/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`}
           infoAddress={`https://pancakeswap.info/pair/${lpAddress}`}
           totalValueFormatted={totalValueFormatted}
           lpLabel={lpLabel}
