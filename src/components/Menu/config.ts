@@ -12,7 +12,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x3594a1674250bcc658aa18babf028c894e463b25',
+        href: 'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
       },
       {
         label: 'Liquidity',
@@ -20,7 +20,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Buy ViXA',
-        href: 'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x3594a1674250bcc658aa18babf028c894e463b25',
+        href: 'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
       },
       {
         label: 'Add ViXA-BNB LP',
