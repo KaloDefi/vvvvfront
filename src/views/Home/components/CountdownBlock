@@ -1,0 +1,103 @@
+import React, { useState, useEffect } from 'react'
+import { Card, CardBody, Heading, Text } from '@pancakeswap-libs/uikit'
+import Countdown, { zeroPad } from 'react-countdown'
+import styled from 'styled-components'
+
+const CustomGrid = styled.div`
+display: grid;
+grid-gap: 32px;
+margin-bottom: 32px;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr;
+
+${({ theme }) => theme.mediaQueries.md} {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+`
+
+const CustomCard = styled.div`
+font-size: 16px;
+color: #fff;
+background: ${(props) => props.theme.card.background};;
+border-radius: 8px;
+display: flex;
+flex-direction: column;
+height: 200px;
+padding: 32px;
+`
+
+const CountdownText = styled.span`
+  display: flex;
+  flex-direction: column;
+`
+
+const CountdownBlock = () => {
+    const [farmCountdownDate, setFarmCountdownDate] = useState(0)
+    const [harvestCountdownDate, setHarvestCountdownDate] = useState(0)
+    const [loading, setLoading] = useState(true);
+    const REACT_BSC_API_KEY = "N4VT8KJRPYSTACVY6887SXRXYRSGBCHK7A"
+    const FARMING_BLOCKNUMBER = "8899999"
+    const HARVEST_BLOCKNUMBER = "8899999"
+
+    const getFarmTime = () => {
+        fetch(`https://api.bscscan.com/api?module=block&action=getblockcountdown&blockno=${FARMING_BLOCKNUMBER}&apikey=${REACT_BSC_API_KEY}`)
+            .then(res => res.json().then(data =>
+                setFarmCountdownDate(Number(Date.now() + data.result.EstimateTimeInSec * (1000)
+                ))));
+    }
+
+    const getHarvestTime = () => {
+        fetch(`https://api.bscscan.com/api?module=block&action=getblockcountdown&blockno=${HARVEST_BLOCKNUMBER}&apikey=${REACT_BSC_API_KEY}`)
+            .then(res => res.json().then(data =>
+                setHarvestCountdownDate(Number(Date.now() + data.result.EstimateTimeInSec * (1000)
+                ))));
+    }
+
+    useEffect(() => {
+        getFarmTime()
+        getHarvestTime()
+    }, [])
+
+    useEffect(() => {
+        if (farmCountdownDate !== 0 && harvestCountdownDate !== 0) {
+            setLoading(false)
+        }
+    }, [farmCountdownDate, harvestCountdownDate])
+
+    const CountdownTime = ({ days, hours, minutes, seconds, completed }) => {
+        return (
+            <CountdownText>
+                <span style={{ fontSize: '32px', paddingTop: '10px', paddingBottom: '5px', color: 'rgb(255, 59, 11)', fontWeight: 800 }}>{zeroPad(days)} : {zeroPad(hours)} : {zeroPad(minutes)} : {zeroPad(seconds)}</span>
+                <span style={{ fontSize: '12px', paddingTop: '10px' }}>Days : Hours : Minutes : Seconds</span>
+            </CountdownText>
+        )
+    }
+
+    return (
+        <CustomGrid>
+            <CustomCard>
+                <div style={{ margin: 'auto 0px' }}>
+                    <p style={{ fontSize: '28px', fontWeight: 800 }}>Farm Start Countdown</p>
+                    <p style={{ fontSize: '18px', paddingTop: '15px' }}>Block 8899999</p>
+                    {loading === false ?
+                        <Countdown date={farmCountdownDate} zeroPadTime={2} renderer={CountdownTime} />
+                        : <p style={{ fontSize: '12px', paddingTop: '10px' }}>Fetching the data from BSCscan</p>
+                    }
+                </div>
+            </CustomCard>
+            <CustomCard>
+                <div style={{ margin: 'auto 0px' }}>
+                    <p style={{ fontSize: '28px', fontWeight: 800 }}>Harvest Unlock Countdown</p>
+                    <p style={{ fontSize: '18px', paddingTop: '15px' }}>Block 8899999</p>
+                    {loading === false ?
+                        <Countdown date={harvestCountdownDate} zeroPadTime={2} renderer={CountdownTime} />
+                        : <p style={{ fontSize: '12px', paddingTop: '10px' }}>Fetching the data from BSCscan</p>
+                    }
+                </div>
+            </CustomCard>
+        </CustomGrid>
+    )
+}
+
+export default CountdownBlock
