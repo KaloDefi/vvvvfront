@@ -39,7 +39,7 @@ const StyledCardHeader: React.FC<{
       return `${t('Automatic restaking')}`
     }
     if (isCakePool) {
-      return `${t('Earn PUSX, stake PUSX')}`
+      return `${t('Earn VIXA, stake VIXA')}`
     }
     return `${t('Stake')} ${stakingTokenSymbol}`
   }
