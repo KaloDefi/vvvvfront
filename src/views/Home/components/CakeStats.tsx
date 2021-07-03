@@ -23,7 +23,12 @@ const Row = styled.div`
   justify-content: space-between;
   margin-bottom: 8px;
 `
+
 const cakePriceBusd = usePriceCakeBusd()
+const vixaprice = new BigNumber(cakePriceBusd).toNumber()
+
+
+
 const CakeStats = () => {
   const { t } = useTranslation()
   const totalSupply = useTotalSupply()
@@ -38,7 +43,7 @@ const CakeStats = () => {
         </Heading>
         <Row>
            <Text fontSize="18px">{t('ViXA Price')}</Text>
-          <CardValue fontSize="18px" decimals={0} value={cakePriceBusd} />
+          <CardValue fontSize="18px" decimals={0} value={vixaprice} />
         </Row>
         <Row>
           <Text fontSize="14px">{t('Total ViXA Supply')}</Text>
