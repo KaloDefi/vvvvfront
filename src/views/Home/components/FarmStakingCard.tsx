@@ -65,7 +65,7 @@ const FarmedStakingCard = () => {
           <CakeHarvestBalance />
         </Block>
         <Block>
-          <Label>{t('PUSX in Wallet')}:</Label>
+          <Label>{t('VIXA in Wallet')}:</Label>
           <CakeWalletBalance />
         </Block>
         <Actions>
