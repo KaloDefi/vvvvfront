@@ -10,7 +10,7 @@ import CakeHarvestBalance from './CakeHarvestBalance'
 import CakeWalletBalance from './CakeWalletBalance'
 
 const StyledFarmStakingCard = styled(Card)`
-  background-image: url('/images/cake-bg.svg');
+  background-image: url('/images/cake-bg.png');
   background-repeat: no-repeat;
   background-position: top right;
   min-height: 376px;
@@ -59,9 +59,9 @@ const FarmedStakingCard = () => {
         <Heading size="xl" mb="24px">
           {t('Farms & Staking')}
         </Heading>
-        <CardImage src="/images/cake.svg" alt="cake logo" width={64} height={64} />
+        <CardImage src="/images/pools/vixa-vixa.png" alt="ViXA logo" width={64} height={64} />
         <Block>
-          <Label>{t('PUSX to Harvest')}:</Label>
+          <Label>{t('VIXA to Harvest')}:</Label>
           <CakeHarvestBalance />
         </Block>
         <Block>
@@ -77,7 +77,7 @@ const FarmedStakingCard = () => {
               width="100%"
             >
               {pendingTx
-                ? t('Collecting PUSX')
+                ? t('Collecting VIXA')
                 : t('Harvest all (%count%)', {
                     count: balancesWithValue.length,
                   })}
