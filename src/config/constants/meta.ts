@@ -1,44 +1,44 @@
 import { PageMeta } from './types'
 
 export const DEFAULT_META: PageMeta = {
-  title: 'PuSwap',
+  title: 'ViXA',
   description:
-    'The most popular AMM on BSC by user count! Earn PuSwap through yield farming or win it in the Lottery, then stake it in Syrup Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by PuSwap), NFTs, and more, on a platform you can trust.',
-  image: 'https://becoswap.com/images/hero.jpg',
+    'ViXA.FiNANCE is the first high yield farming & staking on Binance Smart Chain.',
+  
 }
 
 export const customMeta: { [key: string]: PageMeta } = {
   '/': {
-    title: 'Home | PuSwap',
+    title: 'Home | ViXA',
   },
   '/competition': {
-    title: 'Trading Battle | PuSwap',
+    title: 'Trading Battle | ViXA',
   },
   '/prediction': {
-    title: 'Prediction | PuSwap',
+    title: 'Prediction | ViXA',
   },
   '/farms': {
-    title: 'Farms | PuSwap',
+    title: 'Farms | ViXA',
   },
   '/pools': {
-    title: 'Pools | PuSwap',
+    title: 'Pools | ViXA',
   },
   '/lottery': {
-    title: 'Lottery | PuSwap',
+    title: 'Lottery | ViXA',
   },
   '/collectibles': {
-    title: 'Collectibles | PuSwap',
+    title: 'Collectibles | ViXA',
   },
   '/ifo': {
-    title: 'Initial Farm Offering | PuSwap',
+    title: 'Initial Farm Offering | ViXA',
   },
   '/teams': {
-    title: 'Leaderboard | PuSwap',
+    title: 'Leaderboard | ViXA',
   },
   '/profile/tasks': {
-    title: 'Task Center | PuSwap',
+    title: 'Task Center | ViXA',
   },
   '/profile': {
-    title: 'Your Profile | PuSwap',
+    title: 'Your Profile | ViXA',
   },
 }
