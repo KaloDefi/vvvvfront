@@ -50,9 +50,9 @@ const Pools: React.FC = () => {
               {t('High APR, low risk.')}
             </Heading>
           </Flex>
-          {<Flex height="fit-content" justifyContent="center" alignItems="center" mt={['24px', null, '0']}>
+         {/* <Flex height="fit-content" justifyContent="center" alignItems="center" mt={['24px', null, '0']}>
             <BountyCard />
-          </Flex>}
+          </Flex> */}
         </Flex>
       </PageHeader>
       <Page>
@@ -80,14 +80,14 @@ const Pools: React.FC = () => {
             ))}
           </Route>
         </FlexLayout>
-        {<Image
+        {/* <Image
           mx="auto"
           mt="12px"
-          src="https://pancakeswap.finance/images/decorations/3d-syrup-bunnies.png"
+          src="/images/3d-syrup-bunnies.png"
           alt="Pancake illustration"
           width={192}
           height={184.5}
-        />}
+        /> */}
       </Page>
     </>
   )
