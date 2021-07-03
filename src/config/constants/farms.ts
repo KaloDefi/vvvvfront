@@ -24,6 +24,16 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 3,
+    lpSymbol: 'VIXA-USDT LP',
+    lpAddresses: {
+      97: '',
+      56: '0xaF1fbD3Ac6Ad97FF924A846508C726cB9DBFbF6C',
+    },
+    token: tokens.vixa,
+    quoteToken: tokens.usdt,
+  }, 
+  {
+    pid: 4,
     lpSymbol: 'BNB-BUSD LP',
     lpAddresses: {
       97: '',
@@ -33,7 +43,7 @@ const farms: FarmConfig[] = [
     quoteToken: tokens.wbnb,
   },
   {
-    pid: 4,
+    pid: 5,
     lpSymbol: 'BNB-USDT LP',
     lpAddresses: {
       97: '',
@@ -43,7 +53,27 @@ const farms: FarmConfig[] = [
     quoteToken: tokens.wbnb,
   },
   {
-    pid: 5,
+    pid: 6,
+    lpSymbol: 'ETH-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x74E4716E431f45807DCF19f284c7aA99F18a4fbc',
+    },
+    token: tokens.eth,
+    quoteToken: tokens.wbnb,
+  },
+  {
+    pid: 7,
+    lpSymbol: 'BTC-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x61EB789d75A95CAa3fF50ed7E47b96c132fEc082',
+    },
+    token: tokens.btcb,
+    quoteToken: tokens.wbnb,
+  }, 
+  {
+    pid: 8,
     lpSymbol: 'USDT-BUSD LP',
     lpAddresses: {
       97: '',
@@ -53,27 +83,7 @@ const farms: FarmConfig[] = [
     quoteToken: tokens.busd,
   },
   {
-    pid: 6,
-    lpSymbol: 'CAKE-BNB LP',
-    lpAddresses: {
-      97: '',
-      56: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
-    },
-    token: tokens.cake,
-    quoteToken: tokens.wbnb,
-  },
-  {
-    pid: 7,
-    lpSymbol: 'CAKE-BUSD LP',
-    lpAddresses: {
-      97: '',
-      56: '0x804678fa97d91B974ec2af3c843270886528a9E6',
-    },
-    token: tokens.cake,
-    quoteToken: tokens.busd,
-  },
-{
-    pid: 8,
+    pid: 9,
     lpSymbol: 'DAI-BUSD LP',
     lpAddresses: {
       97: '',
@@ -83,7 +93,7 @@ const farms: FarmConfig[] = [
     quoteToken: tokens.busd,
   },
   {
-    pid: 9,
+    pid: 10,
     lpSymbol: 'TUSD-BUSD LP',
     lpAddresses: {
       97: '',
@@ -93,17 +103,17 @@ const farms: FarmConfig[] = [
     quoteToken: tokens.busd,
   },
   {
-    pid: 10,
-    lpSymbol: 'BTC-BNB LP',
+    pid: 11,
+    lpSymbol: 'USDC-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0x61EB789d75A95CAa3fF50ed7E47b96c132fEc082',
-    },
-    token: tokens.btcb,
-    quoteToken: tokens.wbnb,
+      56: '0x2354ef4df11afacb85a5c7f98b624072eccddbb1',
+    }
+    token: tokens.usdc,
+    quoteToken: tokens.busd,
   },
   {
-    pid: 11,
+    pid: 12,
     lpSymbol: 'BTC-BUSD LP',
     lpAddresses: {
       97: '',
@@ -112,8 +122,8 @@ const farms: FarmConfig[] = [
     token: tokens.btcb,
     quoteToken: tokens.busd,
   },
-  {
-    pid: 12,
+   {
+    pid: 13,
     lpSymbol: 'LINK-BNB LP',
     lpAddresses: {
       97: '',
@@ -122,8 +132,8 @@ const farms: FarmConfig[] = [
     token: tokens.link,
     quoteToken: tokens.wbnb,
   },
-  {
-    pid: 13,
+    {
+    pid: 14,
     lpSymbol: 'DOGE-BNB LP',
     lpAddresses: {
       97: '',
@@ -132,28 +142,8 @@ const farms: FarmConfig[] = [
     token: tokens.doge,
     quoteToken: tokens.wbnb,
   },
-  {
-    pid: 14,
-    lpSymbol: 'USDC-BUSD LP',
-    lpAddresses: {
-      97: '',
-      56: '0x2354ef4df11afacb85a5c7f98b624072eccddbb1',
-    },
-    token: tokens.usdc,
-    quoteToken: tokens.busd,
-  },
-  {
+   {
     pid: 15,
-    lpSymbol: 'LTC-BNB LP',
-    lpAddresses: {
-      97: '',
-      56: '0x71b01eBdDD797c8E9E0b003ea2f4FD207fBF46cC',
-    },
-    token: tokens.ltc,
-    quoteToken: tokens.wbnb,
-  },
-  {
-    pid: 16,
     lpSymbol: 'TRX-BNB LP',
     lpAddresses: {
       97: '',
@@ -162,8 +152,9 @@ const farms: FarmConfig[] = [
     token: tokens.trx,
     quoteToken: tokens.wbnb,
   },
-   {
-    pid: 17,
+  
+  {
+    pid: 16,
     lpSymbol: 'DOT-BNB LP',
     lpAddresses: {
       97: '',
@@ -173,25 +164,38 @@ const farms: FarmConfig[] = [
     quoteToken: tokens.wbnb,
   },
   {
-    pid: 18,
-    lpSymbol: 'DAI-BUSD LP',
+    pid: 17,
+    lpSymbol: 'LTC-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x66FDB2eCCfB58cF098eaa419e5EfDe841368e489',
+      56: '0x71b01eBdDD797c8E9E0b003ea2f4FD207fBF46cC',
     },
-    token: tokens.dai,
-    quoteToken: tokens.busd,
+    token: tokens.ltc,
+    quoteToken: tokens.wbnb,
+  },
+
+  {
+    pid: 18,
+    lpSymbol: 'CAKE-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
+    },
+    token: tokens.cake,
+    quoteToken: tokens.wbnb,
   },
   {
     pid: 19,
-    lpSymbol: 'ETH-BNB LP',
+    lpSymbol: 'CAKE-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0x74E4716E431f45807DCF19f284c7aA99F18a4fbc',
+      56: '0x804678fa97d91B974ec2af3c843270886528a9E6',
     },
-    token: tokens.eth,
-    quoteToken: tokens.wbnb,
+    token: tokens.cake,
+    quoteToken: tokens.busd,
   },
+
+  
 ]
 
 export default farms
