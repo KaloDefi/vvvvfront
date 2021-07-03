@@ -61,7 +61,7 @@ const CakeStats = () => {
         </Row>
         <Row>
           <Text fontSize="14px">{t('Token Contract')}</Text>
-          <Text fontSize="14px">{t('0x3594a1674250bcc658aa18babf028c894e463b25')}</Text>
+          <Text fontSize="16px">{t('0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5')}</Text>
         </Row>
        
        
