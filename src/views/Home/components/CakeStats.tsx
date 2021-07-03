@@ -7,7 +7,7 @@ import { getBalanceNumber } from 'utils/formatBalance'
 import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
 import { useTranslation } from 'contexts/Localization'
 import { getCakeAddress } from 'utils/addressHelpers'
-import { usePriceCakeBusd } from 'state/hooks'
+import { cakeBusdPrice } from 'state/hooks/usePriceCakeBusd'
 import CardValue from './CardValue'
 
 
