@@ -7,8 +7,8 @@ const pools: PoolConfig[] = [
     stakingToken: tokens.vixa,
     earningToken: tokens.vixa,
     contractAddress: {
-      97: '0xa9fe1666a06b63851f5e342741e16df08e0bf261',
-      56: '0xa9fe1666a06b63851f5e342741e16df08e0bf261',
+      97: '0xed7459319b9a6ccf3b8e6f96f1e5b70ea83a0b6d',
+      56: '0xed7459319b9a6ccf3b8e6f96f1e5b70ea83a0b6d',
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,
