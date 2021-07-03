@@ -20,7 +20,7 @@ const Hero = styled.div`
   background-position: center center, center center;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: rgb(146 146 146 / 35%) 0px 0px 0px 3000px inset;
+ 
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
