@@ -84,9 +84,9 @@ const Home: React.FC = () => {
     <div>
       <Hero>
        <Heading as="h1" size="xl" mb="24px" color="secondary">
-          {t('PuSwap')}
+          {t('ViXA.FiNANCE')}
         </Heading>
-        <Text>{t('The Next Generations AMM and High Yield Farm on Binance Smart Chain.')}</Text>
+        <Text>{t('HIGH YIELD FARMING & STAKING ON BINANCE SMART CHAIN.')}</Text>
       </Hero>
       <Page>
         <div>
