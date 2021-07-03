@@ -94,7 +94,7 @@ const config: MenuEntry[] = [
       
       {
         label: 'Telegram ANN',
-        href: 'https://t.me/ViXAFinance,
+        href: 'https://t.me/ViXAFinance',
       },
       {
         label: 'Docs',
