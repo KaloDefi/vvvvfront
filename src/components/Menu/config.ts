@@ -7,14 +7,26 @@ const config: MenuEntry[] = [
     href: '/',
   },
   {
-    label: 'Buy PUSX',
+    label: 'Trade',
     icon: 'TradeIcon',
-    href: 'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x3594a1674250bcC658AA18BAbF028C894e463B25',
-  },
-  {
-    label: 'Add Liquidity',
-    icon: 'TradeIcon',
-    href: 'https://exchange.pancakeswap.finance/#/pool',
+    items: [
+      {
+        label: 'Exchange',
+        href: 'https://exchange.pancakeswap.finance/#/swap',
+      },
+      {
+        label: 'Liquidity',
+        href: 'https://exchange.pancakeswap.finance/#/pool',
+      },
+      {
+        label: 'Buy ViXA',
+        href: 'https://exchange.pancakeswap.finance/#/swap',
+      },
+      {
+        label: 'Add ViXA-BNB LP',
+        href: 'https://exchange.pancakeswap.finance/#/pool',
+      },
+    ],
   },
   {
     label: 'Stakes',
@@ -33,9 +45,13 @@ const config: MenuEntry[] = [
   },
   
   {
-    label: 'Analytics & Charts',
+    label: 'Price Info',
     icon: 'InfoIcon',
     items: [
+      {
+        label: 'Pancakeswap',
+        href: 'https://pancakeswap.info/token/0x3594a1674250bcc658aa18babf028c894e463b25',
+      },
       {
         label: 'Bogged',
         href: 'https://charts.bogged.finance/?token=0x3594a1674250bcC658AA18BAbF028C894e463B25',
@@ -52,35 +68,22 @@ const config: MenuEntry[] = [
         label: 'BSCScan',
         href: 'https://bscscan.com/token/0x3594a1674250bcc658aa18babf028c894e463b25',
       },
-      {
-        label: 'Pancakeswap',
-        href: 'https://pancakeswap.info/token/0x3594a1674250bcc658aa18babf028c894e463b25',
-      },
+      
     ],
   },
   {
-    label: 'Reviews & Audits',
+    label: 'Audits',
     icon: 'NftIcon',
     items: [
       {
-        label: 'By RugDoc',
-        href: 'https://rugdoc.io/project/puswap/',
+        label: 'RugDoc',
+        href: 'https://rugdoc.io/project/',
       },
      
       
     ],
   },
-  {
-    label: 'IFO (SOON)',
-    icon: 'IfoIcon',
-    href: '#',
-  },
-  {
-    label: 'NFT (SOON)',
-    icon: 'NftIcon',
-    href: '#',
-  },
-
+ 
   {
     label: 'Bridge',
     icon: 'BridgeIcon',
@@ -98,15 +101,15 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Telegram ANN',
-        href: 'https://t.me/PuSwap',
+        href: 'https://t.me/ViXAFinance',
       },
       {
         label: 'Docs',
-        href: 'https://puswap.gitbook.io',
+        href: 'https://vixafinance.gitbook.io',
       },
       {
         label: 'Twitter',
-        href: 'https://twitter.com/PuSwap',
+        href: 'https://twitter.com/ViXAFinance',
       },
     ],
   },
