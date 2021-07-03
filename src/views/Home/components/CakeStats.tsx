@@ -56,17 +56,14 @@ const CakeStats = () => {
           <CardValue fontSize="14px" decimals={0} value={0} />
         </Row>
         <Row>
-          <Text fontSize="14px">{t('New PUSX/block')}</Text>
-          <CardValue fontSize="14px" decimals={0} value={pusxPerBlock} />
+          <Text fontSize="14px">{t('Yield Farms Start Block# ')}</Text>
+          <Text fontSize="14px">{t('08 July 2021')}</Text>
         </Row>
         <Row>
-          <Text fontSize="14px">{t('New PUSX/block')}</Text>
-          <CardValue fontSize="14px" decimals={0} value={pusxPerBlock} />
+          <Text fontSize="14px">{t('Token Contract')}</Text>
+          <Text fontSize="14px">{t('0x3594a1674250bcc658aa18babf028c894e463b25')}</Text>
         </Row>
-        <Row>
-          <Text fontSize="14px">{t('New PUSX/block')}</Text>
-          <CardValue fontSize="14px" decimals={0} value={pusxPerBlock} />
-        </Row>
+       
        
       </CardBody>
     </StyledCakeStats>
