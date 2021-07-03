@@ -7,7 +7,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'VIXA-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x43031f621Fc58bEA31309442E5657Ac632700A09',
+      56: '0x7aBf1463b27CDA4174573aCd3eC6c8db5f385A7d',
     },
     token: tokens.vixa,
     quoteToken: tokens.wbnb,
@@ -17,7 +17,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'VIXA-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0xaF1fbD3Ac6Ad97FF924A846508C726cB9DBFbF6C',
+      56: '0x7aBf1463b27CDA4174573aCd3eC6c8db5f385A7d',
     },
     token: tokens.vixa,
     quoteToken: tokens.busd,
@@ -27,7 +27,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'VIXA-USDT LP',
     lpAddresses: {
       97: '',
-      56: '0xaF1fbD3Ac6Ad97FF924A846508C726cB9DBFbF6C',
+      56: '0x7aBf1463b27CDA4174573aCd3eC6c8db5f385A7d',
     },
     token: tokens.vixa,
     quoteToken: tokens.usdt,
