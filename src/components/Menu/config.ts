@@ -68,12 +68,12 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Audits',
+    label: 'Reviews / Audits',
     icon: 'NftIcon',
     items: [
       {
-        label: 'RugDoc',
-        href: 'https://rugdoc.io/project/',
+        label: 'Review by RugDoc',
+        href: 'https://rugdoc.io/project/vixa/',
       },
      
       
