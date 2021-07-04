@@ -3,6 +3,17 @@ import { FarmConfig } from './types'
 
 const farms: FarmConfig[] = [
  
+ {
+    pid: 20,
+    lpSymbol: 'WBNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+    },
+    token: tokens.vixa,
+    quoteToken: tokens.wbnb,
+  },
+ 
   {
     pid: 1,
     lpSymbol: 'VIXA-BNB LP',
