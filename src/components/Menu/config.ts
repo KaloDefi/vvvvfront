@@ -29,7 +29,7 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Stakes',
+    label: 'Pools',
     icon: 'PoolIcon',
     href: '/pools',
   },
