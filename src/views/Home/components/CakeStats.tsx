@@ -65,7 +65,7 @@ const CakeStats = () => {
         </Row>
         <Row>
           <Text fontSize="14px">{t('100% VIXA-BNB LPs Locked')}</Text>
-          <Text fontSize="16px"><a href="https://deeplock.io/lock/0x7abf1463b27cda4174573acd3ec6c8db5f385a7d">PROOF CLICK HERE</a></Text>
+         <a href="https://deeplock.io/lock/0x7abf1463b27cda4174573acd3ec6c8db5f385a7d">PROOF CLICK HERE</a>
         </Row>
        
       </CardBody>
