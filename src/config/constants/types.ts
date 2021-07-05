@@ -37,7 +37,7 @@ export interface Ifo {
   articleUrl: string
   campaignId: string
   tokenOfferingPrice: number
-  version: number
+  isV1: boolean
   [PoolIds.poolBasic]?: IfoPoolInfo
   [PoolIds.poolUnlimited]: IfoPoolInfo
 }
@@ -57,14 +57,13 @@ export interface FarmConfig {
   quoteToken: Token
   multiplier?: string
   isCommunity?: boolean
-  depositFeeBP?: number
-  harvestInterval?: number
-
   dual?: {
     rewardPerBlock: number
     earnLabel: string
     endBlock: number
   }
+  isKingdom?: boolean
+  isTokenOnly?: boolean
 }
 
 export interface PoolConfig {
@@ -78,9 +77,6 @@ export interface PoolConfig {
   sortOrder?: number
   harvest?: boolean
   isFinished?: boolean
-  enableEmergencyWithdraw?: boolean
-  depositFeeBP?: number
-  harvestInterval?: number
 }
 
 export type Images = {
