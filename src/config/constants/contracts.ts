@@ -1,4 +1,13 @@
 export default {
+  wbnb: {
+    56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+    97: '',
+  },
+   vixa: {
+    56: '0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
+    97: '',
+  },
+
   masterChef: {
     97: '',
     56: '0xed7459319b9a6ccf3b8e6f96f1e5b70ea83a0b6d',
