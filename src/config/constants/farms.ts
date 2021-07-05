@@ -5,12 +5,13 @@ const farms: FarmConfig[] = [
  
  {
     pid: 20,
-    lpSymbol: 'WBNB LP',
+    isTokenOnly: true,
+    lpSymbol: 'WBNB',
     lpAddresses: {
       97: '',
       56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
     },
-    token: tokens.vixa,
+    token: tokens.wbnb,
     quoteToken: tokens.wbnb,
   },
  
