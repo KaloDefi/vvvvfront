@@ -1,21 +1,7 @@
-import React, { useState } from 'react'
-import BigNumber from 'bignumber.js'
-import styled, { keyframes } from 'styled-components'
-import { Flex, Text, Skeleton } from '@becoswap-libs/uikit'
-import { Farm } from 'state/types'
-import { provider as ProviderType } from 'web3-core'
-import { useTranslation } from 'contexts/Localization'
-import ExpandableSectionButton from 'components/ExpandableSectionButton'
-import { BASE_ADD_LIQUIDITY_URL } from 'config'
-import getLiquidityUrlPathParts from 'utils/getLiquidityUrlPathParts'
-import DetailsSection from './DetailsSection'
-import CardHeading from './CardHeading'
-import CardActionsContainer from './CardActionsContainer'
-import ApyButton from './ApyButton'
-
 export interface FarmWithStakedValue extends Farm {
   apr?: number
   liquidity?: BigNumber
+  depositFeeBP?: number
 }
 
 const RainbowLight = keyframes`
@@ -91,12 +77,12 @@ interface FarmCardProps {
 }
 
 const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }) => {
-  const { t } = useTranslation()
+  const TranslateString = useI18n()
 
   const [showExpandableSection, setShowExpandableSection] = useState(false)
 
-  // We assume the token name is coin pair + lp e.g. VIXA-BNB LP, LINK-BNB LP,
-  // NAR-VIXA LP. The images should be cake-bnb.svg, link-bnb.svg, nar-cake.svg
+  // We assume the token name is coin pair + lp e.g. CAKE-BNB LP, LINK-BNB LP,
+  // NAR-CAKE LP. The images should be cake-bnb.svg, link-bnb.svg, nar-cake.svg
   const farmImage = farm.lpSymbol.split(' ')[0].toLocaleLowerCase()
 
   const totalValueFormatted = farm.liquidity
@@ -104,10 +90,10 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
     : '-'
 
   const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('PANCAKE', '')
-  const earnLabel = farm.dual ? farm.dual.earnLabel : 'VIXA'
+  // const earnLabel = farm.dual ? farm.dual.earnLabel : 'TOMATO'
+  const earnLabel = farm.dual ? farm.dual.earnLabel : 'GWSP'
 
   const farmAPR = farm.apr && farm.apr.toLocaleString('en-US', { maximumFractionDigits: 2 })
-  const depositFee = farm.depositFeeBP || 0
 
   const liquidityUrlPathParts = getLiquidityUrlPathParts({
     quoteTokenAddress: farm.quoteToken.address,
@@ -118,17 +104,18 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
 
   return (
     <FCard>
-      {farm.token.symbol === 'VIXA' && <StyledCardAccent />}
+      {farm.token.symbol === 'GWSP' && <StyledCardAccent />}
       <CardHeading
         lpLabel={lpLabel}
         multiplier={farm.multiplier}
         isCommunityFarm={farm.isCommunity}
         farmImage={farmImage}
         tokenSymbol={farm.token.symbol}
+        depositFee={farm.depositFeeBP}
       />
       {!removed && (
         <Flex justifyContent="space-between" alignItems="center">
-          <Text>{t('APR')}:</Text>
+          <Text>{TranslateString(736, 'APR')}:</Text>
           <Text bold style={{ display: 'flex', alignItems: 'center' }}>
             {farm.apr ? (
               <>
@@ -142,16 +129,12 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
         </Flex>
       )}
       <Flex justifyContent="space-between">
-        <Text>{t('Earn')}:</Text>
+        <Text>{TranslateString(318, 'Earn')}:</Text>
         <Text bold>{earnLabel}</Text>
       </Flex>
-      <Flex justifyContent="space-between">
-        <Text>{t('Deposit Fee')}:</Text>
-        <Text bold>{depositFee}%</Text>
-      </Flex>
-      <Flex justifyContent="space-between">
-        <Text>{t('Harvest Lockup')}:</Text>
-        <Text bold>{farm.harvestInterval} Hour(s)</Text>
+      <Flex justifyContent='space-between'>
+        <Text style={{ fontSize: '16px' }}>{TranslateString(10001, 'Deposit Fee')}:</Text>
+        <Text bold style={{ fontSize: '16px' }}>{(farm.depositFeeBP / 100)}%</Text>
       </Flex>
       <CardActionsContainer farm={farm} account={account} addLiquidityUrl={addLiquidityUrl} />
       <Divider />
@@ -162,7 +145,13 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
       <ExpandingWrapper expanded={showExpandableSection}>
         <DetailsSection
           removed={removed}
-          bscScanAddress={`https://bscscan.com/token/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`}
+          // bscScanAddress={`https://bscscan.com/address/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`}
+          bscScanAddress={
+            farm.isTokenOnly ?
+              `https://bscscan.com/token/${farm.token.address[process.env.REACT_APP_CHAIN_ID]}`
+              :
+              `https://bscscan.com/token/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`
+          }
           infoAddress={`https://pancakeswap.info/pair/${lpAddress}`}
           totalValueFormatted={totalValueFormatted}
           lpLabel={lpLabel}
