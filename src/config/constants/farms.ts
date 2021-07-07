@@ -40,7 +40,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0x1b96b92314c44b159149f7e0303511fb2fc4774f',
     },
-    token: tokens.busd,
+    token: tokens.vixa,
     quoteToken: tokens.wbnb,
   },
   
