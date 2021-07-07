@@ -6,6 +6,12 @@ const config: MenuEntry[] = [
     icon: 'HomeIcon',
     href: '/',
   },
+   {
+    label: 'Polygon',
+    icon: 'BridgeIcon',
+    href: 'https://polygon.vixa.finance',
+  },
+
   {
     label: 'Trade',
     icon: 'TradeIcon',
@@ -80,12 +86,7 @@ const config: MenuEntry[] = [
     ],
   },
  
-  {
-    label: 'Polygon (Soon)',
-    icon: 'BridgeIcon',
-    href: '#',
-  },
-
+ 
  
   {
     label: 'More',
