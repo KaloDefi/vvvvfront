@@ -35,7 +35,6 @@ const farms: FarmConfig[] = [
   
    {
     pid: 20,
-    isTokenOnly: true,
     lpSymbol: 'WBNB',
     lpAddresses: {
       97: '',
