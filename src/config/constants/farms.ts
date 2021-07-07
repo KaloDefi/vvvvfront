@@ -32,6 +32,19 @@ const farms: FarmConfig[] = [
     token: tokens.vixa,
     quoteToken: tokens.usdt,
   }, 
+  
+   {
+    pid: 20,
+    isTokenOnly: true,
+    lpSymbol: 'WBNB',
+    lpAddresses: {
+      97: '',
+      56: '0x1b96b92314c44b159149f7e0303511fb2fc4774f',
+    },
+    token: tokens.busd,
+    quoteToken: tokens.wbnb,
+  },
+  
   {
     pid: 4,
     lpSymbol: 'BNB-BUSD LP',
