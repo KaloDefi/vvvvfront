@@ -86,7 +86,7 @@ const Home: React.FC = () => {
        <Heading as="h1" size="xl" mb="24px" color="secondary">
           {t('ViXA.FiNANCE')}
         </Heading>
-        <Text>{t('HIGH YIELD FARMING & STAKING ON BINANCE SMART CHAIN.')}</Text>
+        <Text>{t('HIGH YIELD FARMING & STAKING ON BINANCE SMART CHAIN & POLYGON.')}</Text>
       </Hero>
       <Page>
         <div>
