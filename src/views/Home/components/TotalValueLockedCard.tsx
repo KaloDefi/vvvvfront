@@ -24,7 +24,7 @@ const TotalValueLockedCard = () => {
         {data ? (
           <>
 
-            <Heading size="xl">{t('$2,051.20')}</Heading>
+            <Heading size="xl">{t('$20,051.29')}</Heading>
             <Text color="textSubtle">{t('Across all LPs and ViXA Pools')}</Text>
           </>
         ) : (
