@@ -38,9 +38,9 @@ const farms: FarmConfig[] = [
     lpSymbol: 'WBNB',
     lpAddresses: {
       97: '',
-      56: '0x1b96b92314c44b159149f7e0303511fb2fc4774f',
+      56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
     },
-    token: tokens.vixa,
+    token: tokens.busd,
     quoteToken: tokens.wbnb,
   },
   
