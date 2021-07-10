@@ -100,6 +100,12 @@ export interface PoolConfig {
   tokenDecimals: number
   burnFee: number
 }
+export type Images = {
+  lg: string
+  md: string
+  sm: string
+  ipfs?: string
+}
 
 export type NftImages = {
   blur?: string
