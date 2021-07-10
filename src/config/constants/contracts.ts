@@ -7,7 +7,14 @@ export default {
     56: '0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
     97: '',
   },
-
+ busd: {
+    56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
+    97: '0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee',
+  },
+  eth: {
+    56: '0x2170ed0880ac9a755fd29b2688956bd959f933f8',
+    97: '0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee',
+  },
   masterChef: {
     97: '',
     56: '0xed7459319b9a6ccf3b8e6f96f1e5b70ea83a0b6d',
