@@ -1,5 +1,7 @@
-import tokens from './tokens'
-import { FarmConfig } from './types'
+import contracts from './contracts'
+import { FarmConfig, QuoteToken } from './types'
+
+const CHAIN_ID = process.env.REACT_APP_CHAIN_ID
 
 const farms: FarmConfig[] = [
  
