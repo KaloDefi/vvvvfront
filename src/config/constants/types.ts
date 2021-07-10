@@ -1,3 +1,5 @@
+import { TranslatableText } from 'state/types'
+
 export type IfoStatus = 'coming_soon' | 'live' | 'finished'
 
 export interface Token {
@@ -99,12 +101,6 @@ export interface PoolConfig {
   isFinished?: boolean
   tokenDecimals: number
   burnFee: number
-}
-export type Images = {
-  lg: string
-  md: string
-  sm: string
-  ipfs?: string
 }
 
 export type NftImages = {
