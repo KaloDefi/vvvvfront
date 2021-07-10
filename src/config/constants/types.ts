@@ -88,12 +88,71 @@ export interface PoolConfig {
   burnFee: number
 }
 
+export type NftImages = {
+  blur?: string
+} & Images
+
+export type NftVideo = {
+  webm: string
+  mp4: string
+}
+
+export type NftSource = {
+  [key in NftType]: {
+    address: Address
+    identifierKey: string
+  }
+}
+
+export enum NftType {
+  PANCAKE = 'pancake',
+  MIXIE = 'mixie',
+}
+
 export type Nft = {
+  description: string
+  name: string
+  images: NftImages
+  sortOrder: number
+  type: NftType
+  video?: NftVideo
+
+  // Uniquely identifies the nft.
+  // Used for matching an NFT from the config with the data from the NFT's tokenURI
+  identifier: string
+
+  // Used to be "bunnyId". Used when minting NFT
+  variationId?: number | string
+}
+
+export type TeamImages = {
+  alt: string
+} & Images
+
+export type Team = {
+  id: number
   name: string
   description: string
-  originalImage: string
-  previewImage: string
-  blurImage: string
-  sortOrder: number
-  bunnyId: number
+  isJoinable?: boolean
+  users: number
+  points: number
+  images: TeamImages
+  background: string
+  textColor: string
+}
+
+export type CampaignType = 'ifo' | 'teambattle'
+
+export type Campaign = {
+  id: string
+  type: CampaignType
+  title?: TranslatableText
+  description?: TranslatableText
+  badge?: string
+}
+
+export type PageMeta = {
+  title: string
+  description?: string
+  image?: string
 }
