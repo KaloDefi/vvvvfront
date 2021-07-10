@@ -1,19 +1,25 @@
 import { TranslatableText } from 'state/types'
 
-export type IfoStatus = 'coming_soon' | 'live' | 'finished'
-
 export interface Token {
   symbol: string
   address?: Address
   decimals?: number
   projectLink?: string
 }
+
 export enum PoolIds {
   poolBasic = 'poolBasic',
   poolUnlimited = 'poolUnlimited',
 }
 
+export type IfoStatus = 'idle' | 'coming_soon' | 'live' | 'finished'
 
+interface IfoPoolInfo {
+  saleAmount: string
+  raiseAmount: string
+  cakeToBurn: string
+  distributionRatio: number // Range [0-1]
+}
 
 export interface Ifo {
   id: string
@@ -30,7 +36,6 @@ export interface Ifo {
   [PoolIds.poolBasic]?: IfoPoolInfo
   [PoolIds.poolUnlimited]: IfoPoolInfo
 }
-
 
 export enum QuoteToken {
   'BNB' = 'BNB',
