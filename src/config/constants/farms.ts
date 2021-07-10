@@ -7,6 +7,7 @@ const farms: FarmConfig[] = [
  
   {
     pid: 20,
+    risk: 5,
     isTokenOnly: true,
     lpSymbol: 'WBNB',
     lpAddresses: {
