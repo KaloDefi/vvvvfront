@@ -1,5 +1,12 @@
 export type IfoStatus = 'coming_soon' | 'live' | 'finished'
 
+export enum PoolIds {
+  poolBasic = 'poolBasic',
+  poolUnlimited = 'poolUnlimited',
+}
+
+
+
 export interface Ifo {
   id: string
   isActive: boolean
