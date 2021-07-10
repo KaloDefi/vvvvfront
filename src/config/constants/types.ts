@@ -18,20 +18,19 @@ export enum PoolIds {
 export interface Ifo {
   id: string
   isActive: boolean
-  address: Address
+  address: string
   name: string
-  token: string
-  maxContribution: string
-  minContribution: string
-  subTitle?: string
-  description?: string
-  saleAmount: string
-  raiseAmount: string
-  projectSiteUrl: string
-  currency: string
-  currencyAddress: string
-  tokenDecimals: number
+  currency: Token
+  token: Token
+  releaseBlockNumber: number
+  articleUrl: string
+  campaignId: string
+  tokenOfferingPrice: number
+  version: number
+  [PoolIds.poolBasic]?: IfoPoolInfo
+  [PoolIds.poolUnlimited]: IfoPoolInfo
 }
+
 
 export enum QuoteToken {
   'BNB' = 'BNB',
@@ -101,6 +100,13 @@ export interface PoolConfig {
   isFinished?: boolean
   tokenDecimals: number
   burnFee: number
+}
+
+export type Images = {
+  lg: string
+  md: string
+  sm: string
+  ipfs?: string
 }
 
 export type NftImages = {
