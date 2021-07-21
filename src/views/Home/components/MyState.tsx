@@ -62,7 +62,7 @@ const MyState = () => {
         </Heading>
         <CardImage src="/images/pools/kolo-kolo.png" alt="KOLO logo" width={64} height={64} />
         <Block>
-          <Label>{t('1 KOLO')}:<Label>
+          <Label>{t('1 KOLO')}:</Label>
           <MyPrice />
         </Block>
         <Block>
