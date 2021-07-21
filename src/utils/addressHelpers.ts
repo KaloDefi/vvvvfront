@@ -9,7 +9,7 @@ export const getAddress = (address: Address): string => {
 }
 
 export const getCakeAddress = () => {
-  return getAddress(tokens.vixa.address)
+  return getAddress(tokens.kolo.address)
 }
 export const getMasterChefAddress = () => {
   return getAddress(addresses.masterChef)
