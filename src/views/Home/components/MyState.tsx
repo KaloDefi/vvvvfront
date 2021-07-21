@@ -67,7 +67,7 @@ const MyState = () => {
         </Block>
         <Block>
           <Label>{t('Yield Farms Start blocks:')}:</Label>
-          <Label fontSize="24px" lineHeight="36px">{t('#8999999')}:</Label>
+          <Label>{t('#8999999')}</Label>
         </Block>
         <Actions>
             <Button width="100%"  onclick="location='https://bscscan.com/block/countdown/9659999'">COUNTDOWN LINK</Button>
