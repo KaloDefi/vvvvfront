@@ -70,7 +70,7 @@ const MyState = () => {
           <Label>{t('#8999999')}</Label>
         </Block>
         <Actions>
-            <Button width="100%"  onclick="location='https://bscscan.com/block/countdown/9659999'">COUNTDOWN LINK</Button>
+            <Button width="100%">COUNTDOWN LINK</Button>
         </Actions>
       </CardBody>
     </StyledFarmStakingCard>
