@@ -73,7 +73,10 @@ const MyState = () => {
           <Label>{t('Date: Sun Aug 01 2021 09:30:00 GMT+0700')}:</Label>
         </Block>
         <Actions>
-            <Button width="100%">COUNTDOWN LINK</Button>
+            <Button onclick="location.href='https://bscscan.com/block/countdown/9655555'"
+              width="100%">
+              COUNTDOWN LINK
+          </Button>
         </Actions>
       </CardBody>
     </StyledFarmStakingCard>
