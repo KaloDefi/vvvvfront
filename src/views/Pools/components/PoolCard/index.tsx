@@ -32,14 +32,7 @@ const PoolCard: React.FC<{ pool: Pool; account: string }> = ({ pool, account }) 
       />
       <CardBody>
         <AprRow pool={pool} stakingTokenPrice={stakingTokenPrice} />
-        <Flex justifyContent="space-between">
-          <Text>{t('Deposit Fee')}:</Text>
-          <Text bold>{depositFee}%</Text>
-        </Flex>
-        <Flex justifyContent="space-between">
-          <Text>{t('Harvest Lockup')}:</Text>
-          <Text bold>{pool.harvestInterval} Hour(s)</Text>
-        </Flex>
+        
         <Flex mt="24px" flexDirection="column">
           {account ? (
             <CardActions pool={pool} stakedBalance={stakedBalance} stakingTokenPrice={stakingTokenPrice} />
