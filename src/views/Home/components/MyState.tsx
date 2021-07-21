@@ -67,7 +67,10 @@ const MyState = () => {
         </Block>
         <Block>
           <Label>{t('Yield Farms Start blocks:')}:</Label>
-          <Label>{t('#8999999')}</Label>
+          <Heading size="xl" mb="24px">
+          {t('#9655555')}
+        </Heading>
+          <Label>{t('Date: Sun Aug 01 2021 09:30:00 GMT+0700')}:</Label>
         </Block>
         <Actions>
             <Button width="100%">COUNTDOWN LINK</Button>
