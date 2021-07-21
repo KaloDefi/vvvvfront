@@ -6,11 +6,11 @@ const config: MenuEntry[] = [
     icon: 'HomeIcon',
     href: '/',
   },
-   {
-    label: 'Polygon',
-    icon: 'BridgeIcon',
-    href: 'https://polygon.kolo.finance',
-  },
+//    {
+//     label: 'Polygon',
+//     icon: 'BridgeIcon',
+//     href: 'https://polygon.kolo.finance',
+//   },
 
   {
     label: 'Trade',
@@ -18,32 +18,26 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
+        href: 'https://pancakeswap.finance/swap?outputCurrency=',
       },
       {
         label: 'Liquidity',
-        href: 'https://exchange.pancakeswap.finance/#/pool',
+        href: 'https://pancakeswap.finance/liquidity',
       },
-      {
-        label: 'Buy Kolo',
-        href: 'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
-      },
-      {
-        label: 'Add Kolo-BNB LP',
-        href: 'https://exchange.pancakeswap.finance/#/add/BNB/0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
-      },
+      
     ],
+  },
+  {
+    label: 'Mines',
+    icon: 'FarmIcon',
+    href: '/farms',
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
     href: '/pools',
   },
-  {
-    label: 'Farms',
-    icon: 'FarmIcon',
-    href: '/farms',
-  },
+  
   {
     label: 'Referrals',
     icon: 'ReferralIcon',
@@ -51,45 +45,39 @@ const config: MenuEntry[] = [
   },
   
   {
-    label: 'Price Info',
+    label: 'Info',
     icon: 'InfoIcon',
     items: [
       {
         label: 'Pancakeswap',
-        href: 'https://pancakeswap.info/token/0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
-      },
-      {
-        label: 'Bogged',
-        href: 'https://charts.bogged.finance/?token=0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
+        href: 'https://pancakeswap.info/token/',
       },
       {
         label: 'Poocoin',
-        href: 'https://poocoin.app/tokens/0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
+        href: 'https://poocoin.app/tokens/',
       },
       {
         label: 'BSCScan',
-        href: 'https://bscscan.com/token/0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
+        href: 'https://bscscan.com/token/',
       },
       
     ],
   },
-  {
-    label: 'Reviews / Audits',
-    icon: 'NftIcon',
-    items: [
-      {
-        label: 'Review by RugDoc',
-        href: 'https://rugdoc.io/project/vixa/',
-      },
+//   {
+//     label: 'Reviews / Audits',
+//     icon: 'NftIcon',
+//     items: [
+//       {
+//         label: 'Review by RugDoc',
+//         href: 'https://rugdoc.io/project//',
+//       },
      
       
-    ],
-  },
- 
- 
+//     ],
+//   },
  
   {
-    label: 'More',
+    label: 'Community',
     icon: 'MoreIcon',
     items: [
       
