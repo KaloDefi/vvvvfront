@@ -1,9 +1,9 @@
 import React from 'react'
 import { PUSX_PER_BLOCK, TRANSFER_TAX } from 'config'
-
 import { Card, CardBody, Heading, Text } from '@becoswap-libs/uikit'
 import styled from 'styled-components'
 import { getBalanceNumber } from 'utils/formatBalance'
+import { usePriceCakeBusd } from 'state/hooks'
 import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
 import { useTranslation } from 'contexts/Localization'
 import { getCakeAddress } from 'utils/addressHelpers'
@@ -32,12 +32,23 @@ const CakeStats = () => {
   const burnedBalance = getBalanceNumber(useBurnedBalance(getCakeAddress()))
   const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - burnedBalance : 0
   const pusxPerBlock = PUSX_PER_BLOCK.toNumber()
+  
+  const cakeBalance = 1
+  const cakePriceBusd = usePriceCakeBusd()
+  const busdBalance = new BigNumber(getBalanceNumber(cakeBalance)).multipliedBy(cakePriceBusd).toNumber()
+  
+  
   return (
     <StyledCakeStats>
       <CardBody>
         <Heading size="xl" mb="24px">
           {t('KOLO Stats')}
         </Heading>
+        
+         <Row>
+          <Text fontSize="14px">{t('KOLO Price')}</Text>
+          {cakeSupply && <CardValue fontSize="14px" value={busdBalance} />}
+        </Row>
         
         <Row>
           <Text fontSize="14px">{t('Total KOLO Supply')}</Text>
