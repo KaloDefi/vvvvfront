@@ -8,6 +8,7 @@ import useFarmsWithBalance from 'hooks/useFarmsWithBalance'
 import UnlockButton from 'components/UnlockButton'
 import CakeHarvestBalance from './CakeHarvestBalance'
 import CakeWalletBalance from './CakeWalletBalance'
+import MyPrice from './MyPrice'
 
 const StyledFarmStakingCard = styled(Card)`
   background-image: url('/images/cake-bg.png');
@@ -57,34 +58,19 @@ const MyState = () => {
     <StyledFarmStakingCard>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {t('Farms & Stakes')}
+          {t('KOLO Price')}
         </Heading>
         <CardImage src="/images/pools/kolo-kolo.png" alt="KOLO logo" width={64} height={64} />
         <Block>
-          <Label>{t('KOLO to Harvest')}:</Label>
+          <Label>{t('1 KOLO')}:</Label>
           <CakeHarvestBalance />
         </Block>
         <Block>
           <Label>{t('KOLO in Wallet')}:</Label>
-          <CakeWalletBalance />
+          <MyPrice />
         </Block>
         <Actions>
-          {account ? (
-            <Button
-              id="harvest-all"
-              disabled={balancesWithValue.length <= 0 || pendingTx}
-              onClick={harvestAllFarms}
-              width="100%"
-            >
-              {pendingTx
-                ? t('Collecting KOLO')
-                : t('Harvest all (%count%)', {
-                    count: balancesWithValue.length,
-                  })}
-            </Button>
-          ) : (
-            <UnlockButton width="100%" />
-          )}
+            <Button width="100%" />
         </Actions>
       </CardBody>
     </StyledFarmStakingCard>
