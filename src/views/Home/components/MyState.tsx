@@ -67,10 +67,10 @@ const MyState = () => {
         </Block>
         <Block>
           <Label>{t('Yield Farms Start blocks:')}:</Label>
-          <Heading size="xl" mb="24px">
+          <Heading size="xl" mb="20px">
           {t('#9655555')}
         </Heading>
-          <Label>{t('Date: Sun Aug 01 2021 09:30:00 GMT+0700')}:</Label>
+          <Label>{t('Date: Sun Aug 01 2021 09:30:00 GMT+0700')}</Label>
         </Block>
         <Actions>
             <Button onclick="location.href='https://bscscan.com/block/countdown/9655555'"
