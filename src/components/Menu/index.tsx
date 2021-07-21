@@ -28,9 +28,10 @@ const Menu = (props) => {
       setLang={setLanguage}
       cakePriceUsd={cakePriceUsd.toNumber()}
       links={config}
+      priceLink="https://bscscan.com/address/0x6d7971a6f26f590d6927c4b5adc8ab87153449ab"
       profile={{
         username: profile?.username,
-        image: profile?.nft ? `/images/nfts/${profile.nft?.images.sm}` : undefined,
+        image: profile?.nft ? `/images/pools/kolo-kolo.png` : undefined,
         profileLink: '/profile',
         noProfileLink: '/profile',
         showPip: !profile?.username,
