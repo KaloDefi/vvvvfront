@@ -2,10 +2,10 @@ import { useMemo } from 'react'
 import useWeb3 from 'hooks/useWeb3'
 import {
   getBep20Contract,
-  getCakeContract,
+  getCrystlContract,
   getBunnyFactoryContract,
   getBunnySpecialContract,
-  getPancakeRabbitContract,
+  getPolyCrystalRabbitContract,
   getProfileContract,
   getIfoV1Contract,
   getIfoV2Contract,
@@ -18,8 +18,11 @@ import {
   getTradingCompetitionContract,
   getEasterNftContract,
   getErc721Contract,
-  getCakeVaultContract,
+  getCrystlVaultContract,
   getPredictionsContract,
+  getChainlinkOracleContract,
+  getSouschefV2Contract,
+  getLotteryV2Contract,
 } from 'utils/contractHelpers'
 
 /**
@@ -49,9 +52,9 @@ export const useERC721 = (address: string) => {
   return useMemo(() => getErc721Contract(address, web3), [address, web3])
 }
 
-export const useCake = () => {
+export const useCrystl = () => {
   const web3 = useWeb3()
-  return useMemo(() => getCakeContract(web3), [web3])
+  return useMemo(() => getCrystlContract(web3), [web3])
 }
 
 export const useBunnyFactory = () => {
@@ -59,9 +62,9 @@ export const useBunnyFactory = () => {
   return useMemo(() => getBunnyFactoryContract(web3), [web3])
 }
 
-export const usePancakeRabbits = () => {
+export const usePolyCrystalRabbits = () => {
   const web3 = useWeb3()
-  return useMemo(() => getPancakeRabbitContract(web3), [web3])
+  return useMemo(() => getPolyCrystalRabbitContract(web3), [web3])
 }
 
 export const useProfile = () => {
@@ -79,6 +82,11 @@ export const useLotteryTicket = () => {
   return useMemo(() => getLotteryTicketContract(web3), [web3])
 }
 
+export const useLotteryV2Contract = () => {
+  const web3 = useWeb3()
+  return useMemo(() => getLotteryV2Contract(web3), [web3])
+}
+
 export const useMasterchef = () => {
   const web3 = useWeb3()
   return useMemo(() => getMasterchefContract(web3), [web3])
@@ -87,6 +95,11 @@ export const useMasterchef = () => {
 export const useSousChef = (id) => {
   const web3 = useWeb3()
   return useMemo(() => getSouschefContract(id, web3), [id, web3])
+}
+
+export const useSousChefV2 = (id) => {
+  const web3 = useWeb3()
+  return useMemo(() => getSouschefV2Contract(id, web3), [id, web3])
 }
 
 export const usePointCenterIfoContract = () => {
@@ -114,12 +127,17 @@ export const useEasterNftContract = () => {
   return useMemo(() => getEasterNftContract(web3), [web3])
 }
 
-export const useCakeVaultContract = () => {
+export const useCrystlVaultContract = () => {
   const web3 = useWeb3()
-  return useMemo(() => getCakeVaultContract(web3), [web3])
+  return useMemo(() => getCrystlVaultContract(web3), [web3])
 }
 
 export const usePredictionsContract = () => {
   const web3 = useWeb3()
   return useMemo(() => getPredictionsContract(web3), [web3])
+}
+
+export const useChainlinkOracleContract = () => {
+  const web3 = useWeb3()
+  return useMemo(() => getChainlinkOracleContract(web3), [web3])
 }
