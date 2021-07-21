@@ -9,7 +9,7 @@ const config: MenuEntry[] = [
    {
     label: 'Polygon',
     icon: 'BridgeIcon',
-    href: 'https://polygon.vixa.finance',
+    href: 'https://polygon.kolo.finance',
   },
 
   {
@@ -25,11 +25,11 @@ const config: MenuEntry[] = [
         href: 'https://exchange.pancakeswap.finance/#/pool',
       },
       {
-        label: 'Buy ViXA',
+        label: 'Buy Kolo',
         href: 'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
       },
       {
-        label: 'Add ViXA-BNB LP',
+        label: 'Add Kolo-BNB LP',
         href: 'https://exchange.pancakeswap.finance/#/add/BNB/0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
       },
     ],
@@ -95,15 +95,15 @@ const config: MenuEntry[] = [
       
       {
         label: 'Telegram ANN',
-        href: 'https://t.me/ViXAFinance',
+        href: 'https://t.me/KoloFinance',
       },
       {
         label: 'Docs',
-        href: 'https://vixafinance.gitbook.io',
+        href: 'https://kolo-finance.gitbook.io/kolo-finance/',
       },
       {
         label: 'Twitter',
-        href: 'https://twitter.com/ViXAFinance',
+        href: 'https://twitter.com/KoloFinance',
       },
     ],
   },
