@@ -48,7 +48,7 @@ const HarvestAction: React.FunctionComponent<HarvestActionProps> = ({ pid, userD
   return (
     <ActionContainer>
       <ActionTitles>
-        <Title>ViXA</Title>
+        <Title>KOLO </Title>
         <Subtle>{t('EARNED')}</Subtle>
       </ActionTitles>
       <ActionContent>
