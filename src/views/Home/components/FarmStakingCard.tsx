@@ -57,15 +57,15 @@ const FarmedStakingCard = () => {
     <StyledFarmStakingCard>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {t('Farms & Staking')}
+          {t('Farms & Stakes')}
         </Heading>
-        <CardImage src="/images/pools/vixa-vixa.png" alt="ViXA logo" width={64} height={64} />
+        <CardImage src="/images/pools/vixa-vixa.png" alt="KOLO logo" width={64} height={64} />
         <Block>
-          <Label>{t('VIXA to Harvest')}:</Label>
+          <Label>{t('KOLO to Harvest')}:</Label>
           <CakeHarvestBalance />
         </Block>
         <Block>
-          <Label>{t('VIXA in Wallet')}:</Label>
+          <Label>{t('KOLO in Wallet')}:</Label>
           <CakeWalletBalance />
         </Block>
         <Actions>
@@ -77,7 +77,7 @@ const FarmedStakingCard = () => {
               width="100%"
             >
               {pendingTx
-                ? t('Collecting VIXA')
+                ? t('Collecting KOLO')
                 : t('Harvest all (%count%)', {
                     count: balancesWithValue.length,
                   })}
