@@ -19,7 +19,7 @@ const MyPrice = () => {
   if (!account) {
     return (
       <Text color="textDisabled" style={{ lineHeight: '54px' }}>
-       <CardValue value={busdBalance} decimals={4} fontSize="24px" lineHeight="36px" />
+        {t('$')} <CardValue value={busdBalance} decimals={4} fontSize="24px" lineHeight="36px" />
       </Text>
     )
   }
