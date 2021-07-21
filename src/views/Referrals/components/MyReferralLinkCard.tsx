@@ -11,7 +11,7 @@ const MyReferralLinkCard = () => {
   const { t } = useTranslation()
   const { account } = useWeb3React()
 
-  const domain = 'https://vixa.finance/?ref='
+  const domain = 'https://kolo.finance/?ref='
   const referralLink = domain + account
   return (
     <StyledLotteryCard>
