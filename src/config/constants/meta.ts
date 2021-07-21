@@ -1,44 +1,44 @@
 import { PageMeta } from './types'
 
 export const DEFAULT_META: PageMeta = {
-  title: 'ViXA',
+  title: 'KOLO',
   description:
-    'ViXA.FiNANCE is the first high yield farming & staking on Binance Smart Chain.',
+    'KOLO.FiNANCE  is the First Multichain Yield Farms & Stakes on Binance Smart Chain (BSC) & Polygon.',
   
 }
 
 export const customMeta: { [key: string]: PageMeta } = {
   '/': {
-    title: 'Home | ViXA',
+    title: 'Home | KOLO',
   },
   '/competition': {
-    title: 'Trading Battle | ViXA',
+    title: 'Trading Battle | KOLO',
   },
   '/prediction': {
-    title: 'Prediction | ViXA',
+    title: 'Prediction | KOLO',
   },
   '/farms': {
-    title: 'Farms | ViXA',
+    title: 'Farms | KOLO',
   },
   '/pools': {
-    title: 'Pools | ViXA',
+    title: 'Pools | KOLO',
   },
   '/lottery': {
-    title: 'Lottery | ViXA',
+    title: 'Lottery | KOLO',
   },
   '/collectibles': {
-    title: 'Collectibles | ViXA',
+    title: 'Collectibles | KOLO',
   },
   '/ifo': {
-    title: 'Initial Farm Offering | ViXA',
+    title: 'Initial Farm Offering | KOLO',
   },
   '/teams': {
-    title: 'Leaderboard | ViXA',
+    title: 'Leaderboard | KOLO',
   },
   '/profile/tasks': {
-    title: 'Task Center | ViXA',
+    title: 'Task Center | KOLO',
   },
   '/profile': {
-    title: 'Your Profile | ViXA',
+    title: 'Your Profile | KOLO',
   },
 }
