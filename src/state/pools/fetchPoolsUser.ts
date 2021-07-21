@@ -93,7 +93,7 @@ export const fetchUserPendingRewards = async (account) => {
   // )
 
   // Pusx / Pusx pool
-  const pendingReward = await masterChefContract.methods.pendingVixa('0', account).call()
+  const pendingReward = await masterChefContract.methods.pendingKolo('0', account).call()
   // const pendingRewardAfterTax = pendingReward - pendingReward/TRANSFER_TAX;
 
   return { 0: new BigNumber(pendingReward).toJSON() }
