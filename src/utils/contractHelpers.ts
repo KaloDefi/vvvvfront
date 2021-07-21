@@ -12,6 +12,7 @@ import {
   getBunnyFactoryAddress,
   getBunnySpecialAddress,
   getCakeAddress,
+  getCrystlAddress,
   getLotteryAddress,
   getLotteryTicketAddress,
   getMasterChefAddress,
@@ -21,6 +22,7 @@ import {
   getEasterNftAddress,
   getCakeVaultAddress,
   getPredictionsAddress,
+  getChainlinkOracleAddress,
 } from 'utils/addressHelpers'
 
 // ABI
@@ -82,6 +84,9 @@ export const getPointCenterIfoContract = (web3?: Web3) => {
 export const getCakeContract = (web3?: Web3) => {
   return getContract(cakeAbi, getCakeAddress(), web3)
 }
+export const getCrystlContract = (web3?: Web3) => {
+  return getContract(crystlAbi, getCrystlAddress(), web3)
+}
 export const getProfileContract = (web3?: Web3) => {
   return getContract(profileABI, getPancakeProfileAddress(), web3)
 }
@@ -117,4 +122,7 @@ export const getCakeVaultContract = (web3?: Web3) => {
 }
 export const getPredictionsContract = (web3?: Web3) => {
   return getContract(predictionsAbi, getPredictionsAddress(), web3)
+}
+export const getChainlinkOracleContract = (web3?: Web3) => {
+  return getContract(chainlinkOracleAbi, getChainlinkOracleAddress(), web3)
 }
