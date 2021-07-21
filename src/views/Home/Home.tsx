@@ -33,7 +33,7 @@ const Hero = styled.div`
 const Cards = styled(BaseLayout)`
   align-items: stretch;
   justify-content: stretch;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 
   & > div {
     grid-column: span 6;
@@ -83,10 +83,10 @@ const Home: React.FC = () => {
   return (
     <div>
       <Hero>
-       <Heading as="h1" size="xl" mb="24px" color="secondary">
-          {t('ViXA.FiNANCE')}
+       <Heading as="h1" size="xl" mb="25px" color="secondary">
+          {t('KOLO.FiNANCE')}
         </Heading>
-        <Text>{t('HIGH YIELD FARMING & STAKING ON BINANCE SMART CHAIN & POLYGON.')}</Text>
+        <Text>{t('The First Multichain Yield Farms & Stakes on Binance Smart Chain (BSC) & Polygon.')}</Text>
       </Hero>
       <Page>
         <div>
