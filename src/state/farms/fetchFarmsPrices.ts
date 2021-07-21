@@ -16,7 +16,7 @@ const getFarmBaseTokenPrice = (farm: Farm, quoteTokenFarm: Farm, wmaticPriceUsdt
     return hasTokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : BIG_ZERO
   }
 
-  if (farm.quoteToken.symbol === 'WMATIC') {
+  if (farm.quoteToken.symbol === 'WBNB') {
     return hasTokenPriceVsQuote ? wmaticPriceUsdt.times(farm.tokenPriceVsQuote) : BIG_ZERO
   }
 
@@ -30,7 +30,7 @@ const getFarmBaseTokenPrice = (farm: Farm, quoteTokenFarm: Farm, wmaticPriceUsdt
   // If the farm's quote token isn't BUSD or wmatic, we then use the quote token, of the original farm's quote token
   // i.e. for farm PNT - pBTC we use the pBTC farm's quote token - BNB, (pBTC - BNB)
   // from the BNB - pBTC price, we can calculate the PNT - BUSD price
-  if (quoteTokenFarm.quoteToken.symbol === 'WMATIC') {
+  if (quoteTokenFarm.quoteToken.symbol === 'WBNB') {
     const quoteTokenInBusd = wmaticPriceUsdt.times(quoteTokenFarm.tokenPriceVsQuote)
     return hasTokenPriceVsQuote && quoteTokenInBusd
       ? new BigNumber(farm.tokenPriceVsQuote).times(quoteTokenInBusd)
