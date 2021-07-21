@@ -93,7 +93,7 @@ const Home: React.FC = () => {
           <Cards>
             <FarmStakingCard />
             <WinCard />
-            
+            <CakeStats />
           </Cards>
         <CTACards>
           <EarnAPRCard />
