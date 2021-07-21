@@ -1,6 +1,7 @@
 import React from 'react'
 import { PUSX_PER_BLOCK, TRANSFER_TAX } from 'config'
 import { Card, CardBody, Heading, Text } from '@becoswap-libs/uikit'
+import BigNumber from 'bignumber.js'
 import styled from 'styled-components'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { usePriceCakeBusd } from 'state/hooks'
