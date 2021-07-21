@@ -53,7 +53,7 @@ const CakeStats = () => {
         </Row>
         <Row>
           <Text fontSize="14px">{t('Transfer TAX')}</Text>
-          <CardValue fontSize="14px" decimals={0} value={0.1%} />
+          <CardValue fontSize="14px" decimals={0} value={0.1} />
         </Row>
         <Row>
           <Text fontSize="14px">{t('Yield Farms Start Block#8945555  ')}</Text>
