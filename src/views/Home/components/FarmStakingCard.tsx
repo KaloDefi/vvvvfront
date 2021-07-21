@@ -59,7 +59,7 @@ const FarmedStakingCard = () => {
         <Heading size="xl" mb="24px">
           {t('Farms & Stakes')}
         </Heading>
-        <CardImage src="/images/pools/vixa-vixa.png" alt="KOLO logo" width={64} height={64} />
+        <CardImage src="/images/pools/kolo-kolo.png" alt="KOLO logo" width={64} height={64} />
         <Block>
           <Label>{t('KOLO to Harvest')}:</Label>
           <CakeHarvestBalance />
