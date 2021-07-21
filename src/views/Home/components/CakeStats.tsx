@@ -35,7 +35,7 @@ const CakeStats = () => {
   const pusxPerBlock = PUSX_PER_BLOCK.toNumber()
   
   const cakePriceBusd = usePriceCakeBusd()
-  const busdBalance = new BigNumber(getBalanceNumber(cakePriceBusd)).toNumber()
+  const busdBalance = new BigNumber(cakePriceBusd).toNumber()
   
   
   return (
