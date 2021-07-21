@@ -55,21 +55,6 @@ export const fetchFarmUserStakedBalances = async (account: string, farmsToFetch:
   return parsedStakedBalances
 }
 
-export const fetchFarmUserCanHarverts = async (account: string, farmsToFetch: FarmConfig[]) => {
-  const masterChefAddress = getMasterChefAddress()
-
-  const calls = farmsToFetch.map((farm) => {
-    return {
-      address: masterChefAddress,
-      name: 'canHarvest',
-      params: [farm.pid, account],
-    }
-  })
-
-  const canHarverts = await multicall(masterchefABI, calls)
-  return canHarverts
-}
-
 export const fetchFarmUserEarnings = async (account: string, farmsToFetch: FarmConfig[]) => {
   const masterChefAddress = getMasterChefAddress()
 
