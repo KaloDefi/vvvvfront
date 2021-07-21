@@ -3,8 +3,8 @@ const tokens = {
     symbol: 'BNB',
     projectLink: 'https://www.binance.com/',
   },
-  vixa: {
-    symbol: 'VIXA',
+  kolo: {
+    symbol: 'KOLO',
     address: {
       56: '0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
       97: '',
