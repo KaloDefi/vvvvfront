@@ -63,11 +63,11 @@ const MyState = () => {
         <CardImage src="/images/pools/kolo-kolo.png" alt="KOLO logo" width={64} height={64} />
         <Block>
           <Label>{t('1 KOLO')}:</Label>
-          <CakeHarvestBalance />
+          <MyPrice />
         </Block>
         <Block>
-          <Label>{t('KOLO in Wallet')}:</Label>
-          <MyPrice />
+          <Label>{t('Yield Farms Start blocks:')}:</Label>
+          <Label fontSize="24px" lineHeight="36px">{t('#8999999')}:</Label>
         </Block>
         <Actions>
             <Button width="100%" />
