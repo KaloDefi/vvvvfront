@@ -66,18 +66,7 @@ const CakeStats = () => {
           <Text fontSize="14px">{t('Transfer TAX')}</Text>
           <CardValue fontSize="14px" decimals={0} value={0.1} />
         </Row>
-        <Row>
-          <Text fontSize="14px">{t('Yield Farms Start Block#8945555  ')}</Text>
-          <Text fontSize="14px">{t('Jul 07 2021 - 10:00 AM UTC')}</Text>
-        </Row>
-        <Row>
-          <Text fontSize="14px">{t('Token Contract')}</Text>
-          <Text fontSize="16px">{t('0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5')}</Text>
-        </Row>
-        <Row>
-          <Text fontSize="14px">{t('100% KOLO-BNB LPs Locked')}</Text>
-         <a href="https://deeplock.io/lock/0x7abf1463b27cda4174573acd3ec6c8db5f385a7d">PROOF CLICK HERE</a>
-        </Row>
+        
        
       </CardBody>
     </StyledCakeStats>
