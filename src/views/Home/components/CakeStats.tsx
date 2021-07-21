@@ -36,24 +36,24 @@ const CakeStats = () => {
     <StyledCakeStats>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {t('ViXA Details')}
+          {t('KOLO Stats')}
         </Heading>
         
         <Row>
-          <Text fontSize="14px">{t('Total ViXA Supply')}</Text>
+          <Text fontSize="14px">{t('Total KOLO Supply')}</Text>
           {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} />}
         </Row>
         <Row>
-          <Text fontSize="14px">{t('Total ViXA Burned')}</Text>
+          <Text fontSize="14px">{t('Total KOLO Burned')}</Text>
           <CardValue fontSize="14px" decimals={0} value={burnedBalance} />
         </Row>
         <Row>
-          <Text fontSize="14px">{t('New ViXA/block')}</Text>
+          <Text fontSize="14px">{t('New KOLO/block')}</Text>
           <CardValue fontSize="14px" decimals={0} value={pusxPerBlock} />
         </Row>
         <Row>
           <Text fontSize="14px">{t('Transfer TAX')}</Text>
-          <CardValue fontSize="14px" decimals={0} value={0} />
+          <CardValue fontSize="14px" decimals={0} value={0.1%} />
         </Row>
         <Row>
           <Text fontSize="14px">{t('Yield Farms Start Block#8945555  ')}</Text>
@@ -64,7 +64,7 @@ const CakeStats = () => {
           <Text fontSize="16px">{t('0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5')}</Text>
         </Row>
         <Row>
-          <Text fontSize="14px">{t('100% VIXA-BNB LPs Locked')}</Text>
+          <Text fontSize="14px">{t('100% KOLO-BNB LPs Locked')}</Text>
          <a href="https://deeplock.io/lock/0x7abf1463b27cda4174573acd3ec6c8db5f385a7d">PROOF CLICK HERE</a>
         </Row>
        
