@@ -47,7 +47,7 @@ const CakeStats = () => {
         
          <Row>
           <Text fontSize="14px">{t('KOLO Price')}</Text>
-          {cakeSupply && <CardValue fontSize="14px" value={busdBalance} />}
+          {cakeSupply && <CardValue fontSize="14px" value={t('$')}{busdBalance} />}
         </Row>
         
         <Row>
