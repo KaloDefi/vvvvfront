@@ -10,7 +10,7 @@ import LotteryCard from 'views/Home/components/LotteryCard'
 import EarnAssetCard from 'views/Home/components/EarnAssetCard'
 import TotalValueLockedCard from 'views/Home/components/TotalValueLockedCard'
 import WinCard from 'views/Home/components/WinCard'
-
+import MyState from 'views/Home/components/MyState'
 
 
 const Hero = styled.div`
@@ -92,7 +92,7 @@ const Home: React.FC = () => {
         <div>
           <Cards>
             <FarmStakingCard />
-            <WinCard />
+            <MyState />
             <CakeStats />
           </Cards>
         <CTACards>
