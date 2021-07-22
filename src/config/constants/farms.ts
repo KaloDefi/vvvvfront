@@ -7,7 +7,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'KOLO-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x54c6F4f97496481E4cd14Aa91aa3AaD00125DfDB',
+      137: '0x54c6F4f97496481E4cd14Aa91aa3AaD00125DfDB',
     },
     token: tokens.kolo,
     quoteToken: tokens.wbnb,
@@ -17,7 +17,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'KOLO-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0x601dCEf2dB87622f79B25C92977CDAF3fb12A41E',
+      137: '0x601dCEf2dB87622f79B25C92977CDAF3fb12A41E',
     },
     token: tokens.kolo,
     quoteToken: tokens.busd,
@@ -27,7 +27,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'USDT-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0x7EFaEf62fDdCCa950418312c6C91Aef321375A00',
+      137: '0x7EFaEf62fDdCCa950418312c6C91Aef321375A00',
     },
     token: tokens.usdt,
     quoteToken: tokens.busd,
@@ -37,7 +37,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BNB-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+      137: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
     },
     token: tokens.busd,
     quoteToken: tokens.wbnb,
@@ -47,7 +47,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'WBNB',
     lpAddresses: {
       97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
-      56: tokens.wbnb.address[56],
+      137: tokens.wbnb.address[56],
     },
     token: tokens.wbnb,
     quoteToken: tokens.wbnb,
