@@ -24,7 +24,7 @@ const tokens = {
   link: {
     symbol: 'LINK',
     address: {
-      56: '0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39',
+      137: '0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39',
       97: '',
     },
     decimals: 18,
