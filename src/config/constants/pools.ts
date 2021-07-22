@@ -8,11 +8,11 @@ const pools: PoolConfig[] = [
     earningToken: tokens.kolo,
     contractAddress: {
       97: '',
-      56: '',
+      56: '0x329d643e4a2e15f98d538a5d186a50dbd3da60ba',
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,
-    tokenPerBlock: '0.2',
+    tokenPerBlock: '0.1',
     sortOrder: 1,
     isFinished: false,
   },
