@@ -24,8 +24,8 @@ const TotalValueLockedCard = () => {
         {data ? (
           <>
 
-            <Heading size="xl">{t('$20,051.29')}</Heading>
-            <Text color="textSubtle">{t('Across all LPs and ViXA Pools')}</Text>
+            <Heading size="xl">{t('$200.29')}</Heading>
+            <Text color="textSubtle">{t('Across all LPs and KOLO Pools')}</Text>
           </>
         ) : (
           <Skeleton height={66} />
