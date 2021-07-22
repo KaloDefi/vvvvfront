@@ -1,35 +1,35 @@
 export default {
   masterChef: {
     97: '',
-    56: '0xed7459319b9a6ccf3b8e6f96f1e5b70ea83a0b6d',
+    56: '',
   },
   sousChef: {
-    97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
+    97: '',
     56: '0x6ab8463a4185b80905e05a9ff80a2d6b714b9e95',
   },
   lottery: {
-    97: '0x091fF4ee8b12dF117a9b3A9F3D7E8fd5f6F79ac1',
+    97: '',
     56: '0x091fF4ee8b12dF117a9b3A9F3D7E8fd5f6F79ac1',
   },
   lotteryNFT: {
     97: '0x8175c10383511b3a1C68f9dB222dc14A19CC950e',
-    56: '0xf0c8caeeeb373cacbe8240124931c24aeadf1e05',
+    56: '',
   },
   multiCall: {
-    56: '0xc586fa3b28544D52Daee4fC8189739D4d63A2491',
+    56: '',
     97: '',
   },
   pancakeProfile: {
     56: '0xDf4dBf6536201370F95e06A0F8a7a70fE40E388a',
-    97: '0x4B683C7E13B6d5D7fd1FeA9530F451954c1A7c8A',
+    97: '',
   },
   pancakeRabbits: {
     56: '0xDf7952B35f24aCF7fC0487D01c8d5690a60DBa07',
-    97: '0x60935F36e4631F73f0f407e68642144e07aC7f5E',
+    97: '',
   },
   bunnyFactory: {
     56: '0xfa249Caa1D16f75fa159F7DFBAc0cC5EaB48CeFf',
-    97: '0x707CBF373175fdB601D34eeBF2Cf665d08f01148',
+    97: '',
   },
   claimRefund: {
     56: '0xE7e53A7e9E3Cf6b840f167eF69519175c497e149',
@@ -37,19 +37,19 @@ export default {
   },
   pointCenterIfo: {
     56: '0x3C6919b132462C1FEc572c6300E83191f4F0012a',
-    97: '0xd2Ac1B1728Bb1C11ae02AB6e75B76Ae41A2997e3',
+    97: '',
   },
   bunnySpecial: {
     56: '0xFee8A195570a18461146F401d6033f5ab3380849',
-    97: '0x7b7b1583De1DeB32Ce6605F6deEbF24A0671c17C',
+    97: '',
   },
   tradingCompetition: {
     56: '0xd718baa0B1F4f70dcC8458154042120FFE0DEFFA',
-    97: '0xC787F45B833721ED3aC46E99b703B3E1E01abb97',
+    97: '',
   },
   easterNft: {
     56: '0x23c41D28A239dDCAABd1bb1deF8d057189510066',
-    97: '0x24ec6962dbe874F6B67B5C50857565667fA0854F',
+    97: '',
   },
   cakeVault: {
     56: '',
@@ -60,7 +60,7 @@ export default {
     97: '',
   },
   referrals: {
-    56: '0x2db9C526Fb5C9531BFbC324558659ff03f928341',
-    97: '',
+    56: '0x81bf3b9883ee8e72457a54404b9c03be3970cc01',
+    97: '0x81bf3b9883ee8e72457a54404b9c03be3970cc01',
   },
 }
