@@ -4,53 +4,53 @@ import { FarmConfig } from './types'
 const farms: FarmConfig[] = [
   {
     pid: 1,
-    lpSymbol: 'KOLO-BNB LP',
+    lpSymbol: 'KOLO-MATIC LP',
     lpAddresses: {
       97: '',
       137: '0x54c6F4f97496481E4cd14Aa91aa3AaD00125DfDB',
     },
     token: tokens.kolo,
-    quoteToken: tokens.wbnb,
+    quoteToken: tokens.wmatic,
   },
   {
     pid: 2,
-    lpSymbol: 'KOLO-BUSD LP',
+    lpSymbol: 'KOLO-USDT LP',
     lpAddresses: {
       97: '',
       137: '0x601dCEf2dB87622f79B25C92977CDAF3fb12A41E',
     },
     token: tokens.kolo,
-    quoteToken: tokens.busd,
+    quoteToken: tokens.usdt,
   },
    {
     pid: 3,
-    lpSymbol: 'USDT-BUSD LP',
+    lpSymbol: 'USDT-USDC LP',
     lpAddresses: {
       97: '',
       137: '0x7EFaEf62fDdCCa950418312c6C91Aef321375A00',
     },
     token: tokens.usdt,
-    quoteToken: tokens.busd,
+    quoteToken: tokens.usdc,
   },
   {
     pid: 4,
-    lpSymbol: 'BNB-BUSD LP',
+    lpSymbol: 'MATIC-USDT LP',
     lpAddresses: {
       97: '',
       137: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
     },
-    token: tokens.busd,
-    quoteToken: tokens.wbnb,
+    token: tokens.usdt,
+    quoteToken: tokens.matic,
   },
   {
     pid: 5,
-    lpSymbol: 'WBNB',
+    lpSymbol: 'WMATIC',
     lpAddresses: {
       97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
-      137: tokens.wbnb.address[56],
+      137: tokens.wmatic.address[137],
     },
-    token: tokens.wbnb,
-    quoteToken: tokens.wbnb,
+    token: tokens.wmatic,
+    quoteToken: tokens.wmatic,
   },
 ]
 
