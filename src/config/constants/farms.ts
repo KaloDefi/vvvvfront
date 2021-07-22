@@ -7,7 +7,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'KOLO-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x7aBf1463b27CDA4174573aCd3eC6c8db5f385A7d',
+      56: '',
     },
     token: tokens.kolo,
     quoteToken: tokens.wbnb,
@@ -17,7 +17,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'KOLO-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0xc2a9540F68dF7e2b037850981e7cA156D1244A97',
+      56: '',
     },
     token: tokens.kolo,
     quoteToken: tokens.busd,
