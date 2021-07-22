@@ -6,11 +6,11 @@ const config: MenuEntry[] = [
     icon: 'HomeIcon',
     href: '/',
   },
-//    {
-//     label: 'Polygon',
-//     icon: 'BridgeIcon',
-//     href: 'https://polygon.kolo.finance',
-//   },
+   {
+    label: 'KOLO Polygon',
+    icon: 'BridgeIcon',
+    href: 'https://polygon.kolo.finance',
+  },
 
   {
     label: 'Trade',
