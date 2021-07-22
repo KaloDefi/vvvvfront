@@ -7,7 +7,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'KOLO-MATIC LP',
     lpAddresses: {
       97: '',
-      137: '0x54c6F4f97496481E4cd14Aa91aa3AaD00125DfDB',
+      137: '0x4dcbf9c202Df9E44670640DBe7BB746751ACa4da',
     },
     token: tokens.kolo,
     quoteToken: tokens.wmatic,
@@ -17,7 +17,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'KOLO-USDT LP',
     lpAddresses: {
       97: '',
-      137: '0x601dCEf2dB87622f79B25C92977CDAF3fb12A41E',
+      137: '0x708125736389Cc1C0B5f0e4de35F381F12524fcd',
     },
     token: tokens.kolo,
     quoteToken: tokens.usdt,
@@ -26,8 +26,8 @@ const farms: FarmConfig[] = [
     pid: 3,
     lpSymbol: 'USDT-USDC LP',
     lpAddresses: {
-      97: '',
-      137: '0x7EFaEf62fDdCCa950418312c6C91Aef321375A00',
+      97: '0x2cF7252e74036d1Da831d11089D326296e64a728',
+      137: '0x2cF7252e74036d1Da831d11089D326296e64a728',
     },
     token: tokens.usdt,
     quoteToken: tokens.usdc,
@@ -36,8 +36,8 @@ const farms: FarmConfig[] = [
     pid: 4,
     lpSymbol: 'MATIC-USDT LP',
     lpAddresses: {
-      97: '',
-      137: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+      97: '0x604229c960e5CACF2aaEAc8Be68Ac07BA9dF81c3',
+      137: '0x604229c960e5CACF2aaEAc8Be68Ac07BA9dF81c3',
     },
     token: tokens.usdt,
     quoteToken: tokens.matic,
@@ -46,7 +46,7 @@ const farms: FarmConfig[] = [
     pid: 5,
     lpSymbol: 'WMATIC',
     lpAddresses: {
-      97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
+      97: '',
       137: tokens.wmatic.address[137],
     },
     token: tokens.wmatic,
