@@ -6,11 +6,11 @@ const tokens = {
   kolo: {
     symbol: 'KOLO',
     address: {
-      56: '0x5f2f05e03fd34792473fdfd83863339c3a1ebfb5',
+      56: '',
       97: '',
     },
     decimals: 18,
-    projectLink: 'https://vixa.finance',
+    projectLink: 'https://kolo.finance',
   },
   btcb: {
     symbol: 'BTCB',
