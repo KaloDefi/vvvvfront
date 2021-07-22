@@ -340,26 +340,4 @@ export const useGetReferralInfo = () => {
   return useSelector((state: State) => state.referrals.data)
 }
 
-export const useTotalValue = (): BigNumber => {
-  const farms = useFarms()
-  const pools = useAllPools()
-  const cakeBusdPrice = usePriceBnbBusd()
-  let value = new BigNumber(0)
-  for (let i = 0; i < farms.data.length; i++) {
-    const farm = farms.data[i]
-    if (farm.lpTotalInQuoteToken) {
-      value = value.plus(new BigNumber(farm.lpTotalInQuoteToken).times(farm.quoteToken.busdPrice))
-    }
-  }
-  for (let i = 0; i < pools.length; i++) {
-    const pool = pools[i]
-    if (pool.totalStaked) {
-      let val
-      if (pool.stakingToken.symbol === 'KOLO') {
-        val = cakeBusdPrice.times(getBalanceAmount(pool.totalStaked, pool.stakingToken.decimals))
-      }
-      value = value.plus(val)
-    }
-  }
-  return new BigNumber(value.toFixed(3))
-}
+
