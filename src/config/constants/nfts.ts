@@ -12,7 +12,7 @@ export const nftSources: NftSource = {
   },
   [NftType.MIXIE]: {
     address: {
-      56: '0xa251b5EAa9E67F2Bc8b33F33e20E91552Bf85566',
+      137: '0xa251b5EAa9E67F2Bc8b33F33e20E91552Bf85566',
       97: '',
     },
     identifierKey: 'image',
