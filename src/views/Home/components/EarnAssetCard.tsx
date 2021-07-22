@@ -27,8 +27,8 @@ const CardMidContent = styled(Heading).attrs({ size: 'xl' })`
 
 const activeNonCakePools = pools.filter((pool) => !pool.isFinished && !pool.earningToken.symbol.includes('VIXA'))
 const latestPools: Pool[] = orderBy(activeNonCakePools, ['sortOrder', 'pid'], ['desc', 'desc']).slice(0, 3)
-// Always include VIXA
-const assets = ['VIXA', ...latestPools.map((pool) => pool.earningToken.symbol)].join(', ')
+// Always include KOLO
+const assets = ['KOLO', ...latestPools.map((pool) => pool.earningToken.symbol)].join(', ')
 
 const EarnAssetCard = () => {
   return (
