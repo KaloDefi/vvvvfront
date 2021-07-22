@@ -6,7 +6,7 @@ const tokens = {
   kolo: {
     symbol: 'KOLO',
     address: {
-      56: '',
+      56: '0x236f2345030668ccb317b3ee8f7916b962be2321',
       97: '',
     },
     decimals: 18,
