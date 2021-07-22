@@ -46,13 +46,13 @@ const CakeStats = () => {
         </Heading>
         
          <Row>
-          <Text fontSize="14px">{t('KOLO Price $')}</Text>
-          {cakeSupply && <CardValue fontSize="14px" value={busdBalance} />}
+          <Text fontSize="14px">{t('KOLO Price:')}</Text>
+          {cakeSupply && <CardValue fontSize="14px" prefix="$"  value={busdBalance} />}
         </Row>
         
         <Row>
           <Text fontSize="14px">{t('Total KOLO Supply')}</Text>
-          {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} />}
+          {cakeSupply && <CardValue fontSize="14px"  value={cakeSupply} />}
         </Row>
         <Row>
           <Text fontSize="14px">{t('Total KOLO Burned')}</Text>
@@ -60,11 +60,11 @@ const CakeStats = () => {
         </Row>
         <Row>
           <Text fontSize="14px">{t('New KOLO/block')}</Text>
-          <CardValue fontSize="14px" decimals={0} value={pusxPerBlock} />
+          <Text fontSize="14px">{t('0.5')}</Text>
         </Row>
         <Row>
           <Text fontSize="14px">{t('Transfer TAX')}</Text>
-          <CardValue fontSize="14px" decimals={0} value={0.1} />
+          <Text fontSize="14px">{t('0.1%')}</Text>
         </Row>
         
        
