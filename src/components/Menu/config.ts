@@ -6,11 +6,11 @@ const config: MenuEntry[] = [
     icon: 'HomeIcon',
     href: '/',
   },
-//    {
-//     label: 'Polygon',
-//     icon: 'BridgeIcon',
-//     href: 'https://polygon.kolo.finance',
-//   },
+   {
+    label: 'KOLO BSC',
+    icon: 'BridgeIcon',
+    href: 'https://kolo.finance',
+  },
 
   {
     label: 'Trade',
@@ -18,11 +18,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Buy KOLO',
-        href: 'https://pancakeswap.finance/swap?outputCurrency=0x236f2345030668ccb317b3ee8f7916b962be2321',
+        href: 'https://quickswap.exchange/#/swap?outputCurrency=0x236f2345030668ccb317b3ee8f7916b962be2321',
       },
       {
-        label: 'Add KOLO-BNB LP',
-        href: 'https://pancakeswap.finance/add/BNB/0x236f2345030668cCB317b3Ee8F7916B962BE2321',
+        label: 'Add KOLO-MATIC LP',
+        href: 'https://quickswap.exchange/#/add/ETH/0x236f2345030668cCB317b3Ee8F7916B962BE2321',
       },
       
     ],
@@ -49,16 +49,16 @@ const config: MenuEntry[] = [
     icon: 'InfoIcon',
     items: [
       {
-        label: 'Pancakeswap',
-        href: 'https://pancakeswap.info/token/0x236f2345030668cCB317b3Ee8F7916B962BE2321',
+        label: 'Quickswap',
+        href: 'https://info.quickswap.exchange/token/0x236f2345030668ccb317b3ee8f7916b962be2321',
       },
       {
         label: 'Poocoin',
-        href: 'https://poocoin.app/tokens/0x236f2345030668cCB317b3Ee8F7916B962BE2321',
+        href: 'https://polygon.poocoin.app/tokens/0x236f2345030668ccb317b3ee8f7916b962be2321',
       },
       {
-        label: 'BSCScan',
-        href: 'https://bscscan.com/token/0x236f2345030668cCB317b3Ee8F7916B962BE2321',
+        label: 'Polygonscan',
+        href: 'https://polygonscan.com/token/0x236f2345030668ccb317b3ee8f7916b962be2321',
       },
       {
         label: 'Docs',
@@ -83,6 +83,10 @@ const config: MenuEntry[] = [
     label: 'Community',
     icon: 'MoreIcon',
     items: [
+      {
+        label: 'Telegram Chat',
+        href: 'https://t.me/joinchat/OP7k_pIiAGA0YzU1',
+      },
       
       {
         label: 'Telegram ANN',
