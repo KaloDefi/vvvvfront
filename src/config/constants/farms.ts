@@ -51,7 +51,6 @@ const farms: FarmConfig[] = [
     },
     token: tokens.wbnb,
     quoteToken: tokens.wbnb,
-    single: true,
   },
 ]
 
