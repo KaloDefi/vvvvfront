@@ -4,7 +4,7 @@ import { Card, CardBody, Heading, Skeleton, Text, Flex, ArrowForwardIcon } from 
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'contexts/Localization'
 import { useTotalValue } from 'state/hooks'
-import { getCrystlAddress } from 'utils/addressHelpers'
+import { getCakeAddress } from 'utils/addressHelpers'
 import getTokenInfoUrl from 'utils/getTokenInfoUrl'
 import CardValue from './CardValue'
 
