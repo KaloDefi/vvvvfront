@@ -17,12 +17,12 @@ const config: MenuEntry[] = [
     icon: 'TradeIcon',
     items: [
       {
-        label: 'Exchange',
-        href: 'https://pancakeswap.finance/swap?outputCurrency=',
+        label: 'Buy KOLO',
+        href: 'https://pancakeswap.finance/swap?outputCurrency=0x236f2345030668ccb317b3ee8f7916b962be2321',
       },
       {
-        label: 'Liquidity',
-        href: 'https://pancakeswap.finance/liquidity',
+        label: 'Add KOLO-BNB LP',
+        href: 'https://pancakeswap.finance/add/BNB/0x236f2345030668cCB317b3Ee8F7916B962BE2321',
       },
       
     ],
@@ -50,15 +50,15 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Pancakeswap',
-        href: 'https://pancakeswap.info/token/',
+        href: 'https://pancakeswap.info/token/0x236f2345030668cCB317b3Ee8F7916B962BE2321',
       },
       {
         label: 'Poocoin',
-        href: 'https://poocoin.app/tokens/',
+        href: 'https://poocoin.app/tokens/0x236f2345030668cCB317b3Ee8F7916B962BE2321',
       },
       {
         label: 'BSCScan',
-        href: 'https://bscscan.com/token/',
+        href: 'https://bscscan.com/token/0x236f2345030668cCB317b3Ee8F7916B962BE2321',
       },
       {
         label: 'Docs',
