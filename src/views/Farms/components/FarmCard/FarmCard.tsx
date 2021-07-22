@@ -159,7 +159,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
         <DetailsSection
           removed={removed}
           bscScanAddress={`https://polygonscan.com/address/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`}
-          infoAddress={`https://info.quickswap.exchange/pairs/${lpAddress}`}
+          infoAddress={`https://info.quickswap.exchange/pair/${lpAddress}`}
           totalValueFormatted={totalValueFormatted}
           lpLabel={lpLabel}
           addLiquidityUrl={addLiquidityUrl}
