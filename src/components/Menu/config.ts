@@ -39,7 +39,7 @@ const config: MenuEntry[] = [
   },
   
   {
-    label: 'Referrals',
+    label: 'Earn Money',
     icon: 'ReferralIcon',
     href: '/referrals',
   },
@@ -60,7 +60,10 @@ const config: MenuEntry[] = [
         label: 'BSCScan',
         href: 'https://bscscan.com/token/',
       },
-      
+      {
+        label: 'Docs',
+        href: 'https://kolo-finance.gitbook.io/kolo-finance/',
+      },
     ],
   },
 //   {
@@ -85,10 +88,7 @@ const config: MenuEntry[] = [
         label: 'Telegram ANN',
         href: 'https://t.me/KoloFinance',
       },
-      {
-        label: 'Docs',
-        href: 'https://kolo-finance.gitbook.io/kolo-finance/',
-      },
+      
       {
         label: 'Twitter',
         href: 'https://twitter.com/KoloFinance',
