@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Card, CardBody, Heading, Skeleton, Text, Flex, ArrowForwardIcon } from '@crystals/uikit'
+import { Card, CardBody, Heading, Skeleton, Text, Flex, ArrowForwardIcon } from '@becoswap-libs/uikit'
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'contexts/Localization'
 import { useTotalValue } from 'state/hooks'
