@@ -342,7 +342,6 @@ export const useGetReferralInfo = () => {
 
 export const useTotalValue = (): BigNumber => {
   const farms = useFarms()
-  useFetchPublicPoolsData()
   const pools = useAllPools()
   const cakeBusdPrice = usePriceBnbBusd()
   let value = new BigNumber(0)
