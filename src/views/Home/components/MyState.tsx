@@ -68,14 +68,14 @@ const MyState = () => {
         <Block>
           <Label>{t('Yield Farms Start blocks:')}:</Label>
           <Heading size="xl" mb="20px">
-          {t('#9655555')}
+          {t('#17455555')}
         </Heading>
-          <a href="https://bscscan.com/block/countdown/9655555">COUNTDOWN</a>
+          <a href="https://polygonscan.com/block/countdown/17455555">COUNTDOWN</a>
         </Block>
         <Actions>
             <Button
               width="100%">
-              Date: Aug 01 2021 09:30 GMT+0700
+              Date: Aug 01 2021 22:15 GMT+0700
           </Button>
         </Actions>
       </CardBody>
