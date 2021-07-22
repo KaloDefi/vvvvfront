@@ -70,12 +70,12 @@ const MyState = () => {
           <Heading size="xl" mb="20px">
           {t('#9655555')}
         </Heading>
-          <Label>{t('Date: Sun Aug 01 2021 09:30:00 GMT+0700')}</Label>
+          <a href="https://bscscan.com/block/countdown/9655555">COUNTDOWN</a>
         </Block>
         <Actions>
             <Button
               width="100%">
-              COUNTDOWN LINK
+              Date: Aug 01 2021 09:30 GMT+0700
           </Button>
         </Actions>
       </CardBody>
