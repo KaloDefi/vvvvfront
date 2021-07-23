@@ -40,7 +40,7 @@ const farms: FarmConfig[] = [
       137: '0x604229c960e5CACF2aaEAc8Be68Ac07BA9dF81c3',
     },
     token: tokens.usdt,
-    quoteToken: tokens.matic,
+    quoteToken: tokens.wmatic,
   },
   {
     pid: 5,
