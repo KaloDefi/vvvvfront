@@ -52,6 +52,16 @@ const farms: FarmConfig[] = [
     token: tokens.wbnb,
     quoteToken: tokens.wbnb,
   },
+  {
+    pid: 6,
+    lpSymbol: 'BTCB',
+    lpAddresses: {
+      97: '0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c',
+      56: tokens.btcb.address[56],
+    },
+    token: tokens.btcb,
+    quoteToken: tokens.btcb,
+  },
 ]
 
 export default farms
