@@ -26,7 +26,8 @@ export const fetchPrices = createAsyncThunk<PriceApiThunk>('prices/fetch', async
     data: {
       [tokens.wmatic.address[137].toLowerCase()]: parseFloat(priceBNB),
       [tokens.usdc.address[137].toLowerCase()]: parseFloat(priceBUSD),
-     
+      [tokens.usdt.address[137].toLowerCase()]: parseFloat(priceBUSD),
+      
     },
   }
 })
