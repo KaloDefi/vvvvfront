@@ -56,11 +56,64 @@ const farms: FarmConfig[] = [
     pid: 6,
     lpSymbol: 'BTCB',
     lpAddresses: {
-      97: '0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c',
+      97: '',
       56: tokens.btcb.address[56],
     },
     token: tokens.btcb,
     quoteToken: tokens.btcb,
+  },
+  
+  {
+    pid: 7,
+    lpSymbol: 'BUSD-USDT LP',
+    lpAddresses: {
+      97: '',
+      56: '0x7EFaEf62fDdCCa950418312c6C91Aef321375A00',
+    },
+    token: tokens.usdt,
+    quoteToken: tokens.busd,
+  },
+  
+  {
+    pid: 8,
+    lpSymbol: 'CAKE-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
+    },
+    token: tokens.cake,
+    quoteToken: tokens.wbnb,
+  },
+  
+   {
+    pid: 9,
+    lpSymbol: 'DAI-BUSD LP',
+    lpAddresses: {
+      97: '',
+      56: '0x66FDB2eCCfB58cF098eaa419e5EfDe841368e489',
+    },
+    token: tokens.dai,
+    quoteToken: tokens.busd,
+  },
+  {
+    pid: 10,
+    lpSymbol: 'TUSD-BUSD LP',
+    lpAddresses: {
+      97: '',
+      56: '0x2E28b9B74D6d99D4697e913b82B41ef1CAC51c6C',
+    },
+    token: tokens.tusd,
+    quoteToken: tokens.busd,
+  },
+  {
+    pid: 11,
+    lpSymbol: 'USDC-BUSD LP',
+    lpAddresses: {
+      97: '',
+      56: '0x2354ef4df11afacb85a5c7f98b624072eccddbb1',
+    },
+    token: tokens.usdc,
+    quoteToken: tokens.busd,
   },
 ]
 
