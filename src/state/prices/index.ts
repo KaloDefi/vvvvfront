@@ -1,6 +1,8 @@
 /* eslint-disable no-param-reassign */
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { PriceApiResponse, PriceApiThunk, PriceState } from 'state/types'
+import tokens from 'config/constants/tokens'
+
 
 const initialState: PriceState = {
   isLoading: false,
@@ -8,29 +10,25 @@ const initialState: PriceState = {
   data: null,
 }
 
-// Thunks
 export const fetchPrices = createAsyncThunk<PriceApiThunk>('prices/fetch', async () => {
-  const response = await fetch('https://api.pancakeswap.info/api/v2/tokens/')
-  const data = (await response.json()) as PriceApiResponse
+  const responseBUSD = await fetch('https://api.binance.com/api/v3/ticker/price?symbol=BUSDUSDT')
+  const { price: priceBUSD } = await responseBUSD.json()
 
-  const response2 = await fetch('https://api.pancakeswap.info/api/v2/tokens/')
-  const data2 = (await response2.json()) as PriceApiResponse
+  const responseBNB = await fetch('https://api.binance.com/api/v3/ticker/price?symbol=MATICUSDT')
+  const { price: priceBNB } = await responseBNB.json()
+
+  // const response = await fetch('https://api.pancakeswap.info/api/v2/tokens')
+  // const data = (await response.json()) as PriceApiResponse
 
   // Return normalized token names
-  const prices = {
-    updated_at: data.updated_at,
-    data: Object.keys(data.data).reduce((accum, token) => {
-      return {
-        ...accum,
-        [token.toLowerCase()]: parseFloat(data.data[token].price),
-      }
-    }, {}),
+  return {
+    updated_at: String(Date.now()),
+    data: {
+      [tokens.wmatic.address[137].toLowerCase()]: parseFloat(priceBNB),
+      [tokens.usdc.address[137].toLowerCase()]: parseFloat(priceBUSD),
+     
+    },
   }
-
-  const becoAddr = Object.keys(data2.data)[0]
-  prices.data[becoAddr.toLowerCase()] = parseFloat(data2.data[becoAddr].price)
-
-  return prices
 })
 
 export const pricesSlice = createSlice({
