@@ -42,16 +42,16 @@ const farms: FarmConfig[] = [
     token: tokens.usdt,
     quoteToken: tokens.wmatic,
   },
-//   {
-//     pid: 4,
-//     lpSymbol: 'WMATIC',
-//     lpAddresses: {
-//       97: '',
-//       137: tokens.wmatic.address[137],
-//     },
-//     token: tokens.wmatic,
-//     quoteToken: tokens.wmatic,
-//   },
+  {
+    pid: 4,
+    lpSymbol: 'WMATIC',
+    lpAddresses: {
+      97: '',
+      137: tokens.wmatic.address[137],
+    },
+    token: tokens.wmatic,
+    quoteToken: tokens.wmatic,
+  },
 ]
 
 export default farms
