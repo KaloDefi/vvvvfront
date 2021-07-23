@@ -98,11 +98,11 @@ const config: MenuEntry[] = [
     ],
   },
   
-//   {
-//     label: 'DappRadar',
-//     icon: 'ReferralIcon',
-//     href: '/referrals',
-//   },
+  {
+    label: 'DappRadar',
+    icon: 'NftIcon',
+    href: 'https://dappradar.com/binance-smart-chain/defi/kolo-finance',
+  },
   
    
 ]
