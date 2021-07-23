@@ -33,7 +33,7 @@ const farms: FarmConfig[] = [
     quoteToken: tokens.usdc,
   },
   {
-    pid: 4,
+    pid: 5,
     lpSymbol: 'MATIC-USDT LP',
     lpAddresses: {
       97: '0x604229c960e5CACF2aaEAc8Be68Ac07BA9dF81c3',
@@ -43,7 +43,7 @@ const farms: FarmConfig[] = [
     quoteToken: tokens.wmatic,
   },
   {
-    pid: 5,
+    pid: 4,
     lpSymbol: 'WMATIC',
     lpAddresses: {
       97: '',
