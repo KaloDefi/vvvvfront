@@ -66,18 +66,7 @@ const config: MenuEntry[] = [
       },
     ],
   },
-//   {
-//     label: 'Reviews / Audits',
-//     icon: 'NftIcon',
-//     items: [
-//       {
-//         label: 'Review by RugDoc',
-//         href: 'https://rugdoc.io/project//',
-//       },
-     
-      
-//     ],
-//   },
+
  
   {
     label: 'Community',
@@ -95,6 +84,27 @@ const config: MenuEntry[] = [
       },
     ],
   },
+  
+    {
+    label: 'Reviews / Audits',
+    icon: 'NftIcon',
+    items: [
+      {
+        label: 'Review by RugDoc',
+        href: 'https://rugdoc.io/project/kolo-finance/',
+      },
+     
+      
+    ],
+  },
+  
+//   {
+//     label: 'DappRadar',
+//     icon: 'ReferralIcon',
+//     href: '/referrals',
+//   },
+  
+   
 ]
 
 export default config
