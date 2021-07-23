@@ -62,10 +62,20 @@ const farms: FarmConfig[] = [
     token: tokens.btcb,
     quoteToken: tokens.btcb,
   },
+  {
+    pid: 12,
+    lpSymbol: 'CAKE',
+    lpAddresses: {
+      97: '',
+      56: tokens.cake.address[56],
+    },
+    token: tokens.cake,
+    quoteToken: tokens.cake,
+  },
   
   {
     pid: 7,
-    lpSymbol: 'BUSD-USDT LP',
+    lpSymbol: 'USDT-BUSD LP',
     lpAddresses: {
       97: '',
       56: '0x7EFaEf62fDdCCa950418312c6C91Aef321375A00',
@@ -113,6 +123,16 @@ const farms: FarmConfig[] = [
       56: '0x2354ef4df11afacb85a5c7f98b624072eccddbb1',
     },
     token: tokens.usdc,
+    quoteToken: tokens.busd,
+  },
+  {
+    pid: 13,
+    lpSymbol: 'BTC-BUSD LP',
+    lpAddresses: {
+      97: '',
+      56: '0xF45cd219aEF8618A92BAa7aD848364a158a24F33',
+    },
+    token: tokens.btcb,
     quoteToken: tokens.busd,
   },
 ]
