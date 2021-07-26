@@ -60,10 +60,10 @@ const config: MenuEntry[] = [
         label: 'Polygonscan',
         href: 'https://polygonscan.com/token/0x236f2345030668ccb317b3ee8f7916b962be2321',
       },
-      {
-        label: 'Docs',
-        href: 'https://kolo-finance.gitbook.io/kolo-finance/',
-      },
+//       {
+//         label: 'Docs',
+//         href: 'https://kolo-finance.gitbook.io/kolo-finance/',
+//       },
     ],
   },
  
