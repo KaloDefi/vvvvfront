@@ -60,10 +60,10 @@ const config: MenuEntry[] = [
         label: 'BSCScan',
         href: 'https://bscscan.com/token/0x236f2345030668cCB317b3Ee8F7916B962BE2321',
       },
-      {
-        label: 'Docs',
-        href: 'https://kolo-finance.gitbook.io/kolo-finance/',
-      },
+//       {
+//         label: 'Docs',
+//         href: 'https://kolo-finance.gitbook.io/kolo-finance/',
+//       },
     ],
   },
 
