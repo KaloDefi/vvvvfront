@@ -11,7 +11,7 @@ import EarnAssetCard from 'views/Home/components/EarnAssetCard'
 import TotalValueLockedCard from 'views/Home/components/TotalValueLockedCard'
 import WinCard from 'views/Home/components/WinCard'
 import MyState from 'views/Home/components/MyState'
-
+import MyStats from 'views/Home/components/MyStats'
 
 const Hero = styled.div`
   background-image: url('/images/pan-bg.png');
@@ -100,7 +100,7 @@ const Home: React.FC = () => {
           <CakeStats />
           <TotalValueLockedCard />
         </CTACards>
-          
+          <MyStats />
          
         </div>
       </Page>
