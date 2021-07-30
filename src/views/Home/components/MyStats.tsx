@@ -2,7 +2,7 @@ import React from 'react'
 import { PUSX_PER_BLOCK, TRANSFER_TAX } from 'config'
 import { useFarms, useGetApiPrices, usePools, usePriceCakeBusd } from 'state/hooks'
 
-import { BaseLayout, Box, Card, CardBody, Heading, Skeleton, Text } from '@becoswap-libs/kai-uikit'
+import { BaseLayout, Box, Card, CardBody, Heading, Skeleton, Text } from '@becoswap-libs/uikit'
 import styled from 'styled-components'
 import { getBalanceAmount, getBalanceNumber } from 'utils/formatBalance'
 import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
@@ -124,7 +124,7 @@ const MyStats = () => {
         <BecoStatsContent>
           <Box>
             <Heading size="xl" mb="24px">
-              {t('Beco Stats')}
+              {t('KOLO Stats')}
             </Heading>
           </Box>
 
@@ -132,7 +132,7 @@ const MyStats = () => {
             {tvl ? (
               <>
                 <Text fontSize="28px">{`${tvlFormatted}`}</Text>
-                <Text fontSize="12px" color="textSubtle">{t('Across all LPs and Beco Pools')}</Text>
+                <Text fontSize="12px" color="textSubtle">{t('Across all LPs and KOLO Pools')}</Text>
               </>
             ) : (
               <Skeleton height={66} />
@@ -148,21 +148,21 @@ const MyStats = () => {
             </div>
             <div>
               <Row>
-                <Text fontSize="13px" color="textSubtle">{t('Circulating BECO Supply')}</Text>
+                <Text fontSize="13px" color="textSubtle">{t('Circulating KOLO Supply')}</Text>
                 {becoSupply && <CardValue fontSize="18px" value={becoSupply} />}
               </Row>
               <Row>
-                <Text fontSize="13px" color="textSubtle">{t('Total BECO Burned')}</Text>
+                <Text fontSize="13px" color="textSubtle">{t('Total KOLO Burned')}</Text>
                 <CardValue fontSize="18px" decimals={0} value={burnedBalance} />
               </Row>
             </div>
             <div>
               <Row>
-                <Text fontSize="13px" color="textSubtle">{t('New BECO/block')}</Text>
+                <Text fontSize="13px" color="textSubtle">{t('New KOLO/block')}</Text>
                 <CardValue fontSize="18px" decimals={0} value={PUSX_PER_BLOCK.toNumber()} />
               </Row>
               <Row>
-                <Text fontSize="13px" color="textSubtle">{t('Transfer BECO Fee')}</Text>
+                <Text fontSize="13px" color="textSubtle">{t('Transfer KOLO Fee')}</Text>
                 <Text fontSize="18px" bold>{TRANSFER_TAX}%</Text>
               </Row>
             </div>
