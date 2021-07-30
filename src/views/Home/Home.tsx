@@ -95,11 +95,7 @@ const Home: React.FC = () => {
             <MyState />
             
           </Cards>
-        <CTACards>
-          <EarnAPRCard />
-          <CakeStats />
-          <TotalValueLockedCard />
-        </CTACards>
+        
           <MyStats />
          
         </div>
